@@ -77,12 +77,58 @@
        el tipo de fuente a Garamond, quedaría:  <strong style="color:darkgreen;font-size:18px;">&ltth style=”color:red ; font-family:Garamond;”&gt</stron>.</p>
 
 
-               <!--elementos anidados -->
-               <h3 style="color:red;font-family:Currier;">3. Elementos anidados</h3>
-               <p style="font-size:16px;font-family:Garuda;color:black;">Cuando hay elementos dentro de elementos, las etiquetas se organizan por parejas de incio y de cierre, también, de forma análoga a la organización de paréntesis en una expresión matemática,  al primer (que se abre le debe corresponder el último) que se cierra.</p>
+                  
+     
+    <!--elementos anidados -->
+<h2 style="color:red;font-family:Currier;">3. Elementos anidados</h2>
+<p style="font-size:16px;font-family:Garuda;color:black;">Cuando hay elementos dentro de otro elemento (es decir anidados), las etiquetas se organizan por parejas de incio y de cierre, al primer elemento que se abre le debe corresponder el último que se cierra.
+    Es impotante para poder entender mejor cuando hacemos anidados y para poder leer mejor la información.</p>
+   </p>
+<table style="color: green;">
+    <tr>
+        <td class="1"><b>&lthtml&gt</td></tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<b>&lthead&gt</b></td></tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lttitle&gt</b></td></tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/title&gt</b></td></tr>
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/head&gt</b></td></tr>
+    <tr>
+        <td><b>&lthtml&gt</b></td></tr>
+ </table>
 
-
-               <!--comentarios -->
+    <!--atributos -->
+<h2 style="color:red;font-family:Currier;">4. Atributos</h2>
+<p style="font-size:16px;font-family:Garuda;">Es una característica de una etiqueta, se utiliza para personalizar más el contenido de la etiqueta.  Consta de  un  nombre
+ y un valor. Los atributos los podemos agregar a un párrafo, un título, una tabla, etc. Cuando agregamos un atributo a una etiqueta, este se agrega en la etiqueta de inicio y la etiqueta de cierre queda igual. Los atributos se agregan a la derecha del nombre de la etiqueta separándolos con un espacio, comenzando por el nombre del atributo el signo igual y a continuación el valor entre comillas (<strong style="color:darkgreen;font-size:18px;">" "</strong>).</p>
+<p style="font-family:Garuda;font-size:16px">Por ejemplo al agregar el atributo con nombre style y valor color:red a la etiqueta <strong style="color:darkgreen;font-size:18px;">&ltth&gt</strong> quedará asi: <strong style="color:darkgreen;font-size:18px;">&ltth style=”color:red”&gt</strong>.
+El atributo style permite personalizar con <strong style="color:darkred;font-size:18px;">CSS</strong> un elemento cualquiera, con este podemos cambiar:</p>
+<table>
+<td><strong style="color:darkgreen;font-size:18px;">&lth1 style=”color:red”&gt&lt/h1&gt</strong></td><td>Color de fuente, los colores se escriben en inglés.</td></tr>
+<tr>
+<td><strong style="color:darkgreen;font-size:18px;">&ltp style=”font-background-color: blue”&gt&lt/p&gt</strong></td><td>El color del fondo</td></tr>
+<tr>
+<td><strong style="color:darkgreen;font-size:18px;">&ltp style=”font-family:Garamond”&gt&lt/p&gt</strong></td><td>Tipo de fuente</td></tr> 
+<tr>
+<td><strong style="color:darkgreen;font-size:18px;">&ltp style=”font-size:12px”&gt&lt/px&gt</strong></td><td>Tamaño de fuente, px se refiere a píxeles.</td></tr></table>
+<p style="font-family:Garuda;font-size:16px">Otros atributos son específicos para algunas etiquetas, por ejemplo:</p>
+<strong style="color:darkgreen;font-size:18px;">&ltimg&gt</strong> Se utiliza para agregar una imagen. Como no tiene contenido indica donde está la imagen, usando el atributo <strong style="color:darkred;font-size:18px;">src</strong>.
+<p>Ejemplo: <strong style="color:darkgreen;font-size:18px;">&ltimg src=”<span style="color:cornflowerblue;font.size:16px;">https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwbYh5M6SoF4IGNhCXE6Fiai
+pwptAT9SzSpIsXl94ZvuIcpbYM4ltx7SPu”</span>&gt&lt/img&gt</p>
+&lta&gt</strong> Sirve para crear vínculos. Estos vínculos pueden ser palabras, párrafos, imágenes, etc. Usamos el atributo href.
+Ejemplo <strong style="color:darkgreen;font-size:18px;">&lta href=”<span style="color:cornflowerblue;font-size:16px;">http://www.amen-amen.net/RV1960/”&gt</em> &lt/a&gt</span></strong>
+Asi se vera una imagen con imagen, y al pulsar sobre ella, podemos ir a otra pagina web o a otra parte de la página.</p>
+<a href="http://www.amen-amen.net/RV1960/"><div align="center"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHzveSMuxUmbqysiJvfL-KY7Z1Y3b1DrBcyFOIX837VDI-a1sADX5EhbnF"></img></div></a>
+<p style= "font-size:16px;font-family:Garuda;">Cuando van varios atributos en una sola etiqueta se separan con espacio. El valor completo de un atributo debe ir entre comillas.</p>
+<p style="font-size:16px;font-family:Garuda;">En el caso del atributo style, que permite cambiar propiedades CSS, se pueden cambiar varias propiedades 
+simultáneamente separándolas con punto y coma (<strong style="color:darkgreen;font-size:18px;">;</strong>). Cada propiedad se modifica con el nombre de la propiedad,
+el signo dos puntos (<strong style="color:darkgreen;font-size:18px;">:</strong>) y a continuación el valor. Si en a la etiqueta <strong style="color:darkgreen;font-size:18px;">&ltth style=”color:red”&gt</strong> quisiéramos también cambiar
+el tipo de fuente a Garamond, quedaría:  <strong style="color:darkgreen;font-size:18px;">&ltth style=”color:red ; font-family:Garamond;”&gt</stron>.</p>
+        
+       
+                             <!--comentarios -->
                <h1 style="color:red;font-family:Currier;">5. Comentarios</h1>
                <p style="font-size:16px;font-family:Garuda;"<strong style="color:darkgreen;font-size:18px;">&lt!</strong>Esto es para recordar<strong style="color:darkgreen;font-size:18px;">-- &gt</strong>
                <pre style="font-size:16px;font_family:Garuda">Son notas que tu puedes leer pero que el navegador no mostrará al desplegar la página.</p>                                   
