@@ -6,5 +6,261 @@
   </head>
   <body>
     <h1 style="color:red;font-family:currier;">Capítulo 2</h1>
+     <h1>Listas, Tablas y algo más<h1>
+                
+                
+                <!--listas -->
+  <h2>1. Listas</h2>
+  <p>Las listas pueden ser ordenadas y no ordenadas. Para esto vamos a utilizar las etiquetas:</p>
+<table>
+   <tr>
+       <td><b>&ltol&gt&lt/ol&gt</b></td><td>Para crear listas ordenadas, quiere decir que van numeradas</td></tr>
+   <tr>
+       <td><b>&ltul&gt&lt/ul&gt</b></td><td>Para crear listas no ordenadas o sea sin numeración, pero con viñetas</td></tr>
+   <tr>
+       <td><b>&ltli&gt&lt/li&gt</b></td><td>Estas van rodeando cada elemento de la lista</td></tr>
+</table>
+<p>Podemos  hacer una lista entre otra lista, siempre teniendo en cuenta que la  última lista que empezamos sea la primera que se cierra. Ejemplo:</p>
+<table>
+    <tr>
+        <td class="1">
+      &nbsp;&nbsp;&nbsp;&nbsp;<b>&lth2&gt</b>Integrantes de las danzas<b>&lt/h2&gt</b></br>
+ &nbsp;&nbsp;&nbsp;&nbsp;<b>&ltul&gt</b></br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltli&gt</b>Niños<b>&lt/li&gt</b></br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltol&gt</b></br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltli&gt</b>Manuel<b>&lt/li&gt</b></br>                                             
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltli&gt</b>Jaiver<b>&lt/li&gt</b></br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltli&gt</b>Sebastian<b>&lt/li&gt</b></br>                                                    
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/ol&gt</b></br>                                                                        
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltli&gt</b>Niñas<b>&lt/li&gt</b></br>                                                         
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltol&gt</b></br>                                                                             
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+ <b>&ltli&gt</b>Vanesa<b>&lt/li&gt</b></br>                                                 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b>&ltli&gt</b>Daniela<b>&lt/li&gt</b></br>                                                
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b>&ltli&gt</b>Sarita<b>&lt/li&gt</b></br> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/ol&gt</b></br> 
+ <b>&lt/ul&gt</b></br>
+         </td>
+         <td class="2">
+<h2>Integrantes de las danzas</h2>
+ <ul>
+     <li>Niños</li>
+         <ol>
+             <li>Manuel</li>                                             
+             <li>Jaiver</li>
+             <li>Sebastian</li>                                                    
+         </ol>                                                                        
+     <li>Niñas</li>                                                         
+         <ol>                                                                             
+             <li>Vanesa</li>                                                 
+             <li>Daniela</li>                                                
+             <li>Sarita</li> 
+         </ol> 
+</ul>
+            </td>
+        </tr>
+ </table>  
+
+
+            <!--tablas -->
+	<h2>2. Tablas</h2>
+	<p>Una tabla es un grupo de información ordenada en filas y columnas. La primera etiqueta que usaremos es:</p>
+<p><b>&lttable&gt&lt/table&gt</b> para crear tablas</P>
+<p>Una tabla se divide en  encabezado y cuerpo.</p>
+
+
+              <!--encabezado de tablas -->
+	 <h2>2.1. Encabezado de la tabla</h2>
+	 <p>El encabezado nos ayuda a darle estilo a nuestra tabla, es donde van los títulos.</p>
+<table>
+    <tr>
+        <td><b>&ltthead&gt&lt/thead&gt</b></td><td> Es el encabezado de tabla (del inglés table head). Contiene los títulos de la tabla.</td></tr>
+    <tr>
+	<td><b>&ltth&gt&lt/th&gt</b></td><td> Son las celdas en el encabezado de una tabla y en cada una de las celdas puede ir un titulo</td></tr>
+</table>
+         <b>colspan</b> Es un atributo que se utiliza con la etiqueta <b>&ltth&gt y &lttd&gt</b> para que un título en la parte superior de la tabla que por defecto ocupa 1 columna, cubra la cantidad de columnas que necesitemos en la tabla. Debemos decirle cuantas columnas debe ocupar.
+Ejemplo:</p>
+         <p><b>&ltth colspan="3"&gt&lt/th&gt</b> Ocupara el espacio de tres columnas</p>
+
+
+       <!--cuerpo de la tabla -->
+	<h2>2.2. Cuerpo de la tabla</h2>
+<table>
+	<tr>
+        <td><b>&lttbody&gt&lt/tbody&gt</b></td><td> Cuerpo de tabla (del inglés table body). Contiene los datos tabulares de la tabla.</td></tr>
+     <tr>
+         <td><b>&lttr&gt&lt/tr&gt</b> </td><td>Para crear una fila de la tabla</td></tr>
+     <tr>	
+	    <td><b>&lttd&gt&lt/td&gt<b></td><td>Es una celda con uno de los datos de la tabla.
+        </td>
+     </tr>
+</table>
+<p>Para crear columnas en cada fila se incluye una celda por  cada columna.</p>
+	</p>
+    <p>Un ejemplo de una tabla con dos imagenes, y dos textos, una  imagen y un texto con enlace:</p>
+    
+    
+    <!--tabla de demostración --><!-- -->
+<table>
+    <thead>
+        <th>Como se escribe</th><th>Imagenes</th><th>Enlaces</th>
+    </thead>
+    <tbody>
+       <tr>
+           <td>
+         <b>&lttable&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>&ltthead&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&ltth&gt Como se escribe&lt/th&gt&ltth&gtImagenes&lt/th&gt&ltth&gtEnlaces&lt/th&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/thead&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<b>&lttbody&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lttr&gt</b></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lttd&gt&lt a href="http://www.codecademy.com/"></br>
+&ltimg src="http://xurl.es/hcjmt" /&gt&lt/a&gt&lt/td&gt</b></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lttd&gt La vida es bella  &lt/td&gt</br>    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt/tr&gt</b>
+        </td>
+       <td><a href="http://www.codecademy.com/"><img src="http://xurl.es/hcjmt"></b>
+        </td>
+        <td>La vida es bella</td>   
+    </tr>
+    <tr>
+        <td><b>&lttd&gt&ltimg src="http://xurl.es/asdb6" /&gt&lt/td&gt </br>
+            &lttd&gt&lta href="http://www.codecademy.com/"></br>
+            Aprendamos hoy&lt/a&gt
+        <td><img src="http://xurl.es/asdb6" /></td>
+        <td><a href="http://www.codecademy.com/">
+            Aprendamos hoy</a>                                </td>
+    </tr>
+</table>
+
+            
+         
+              <!--border -->
+	<h2>3. Propiedad border</h2>
+	Se usa para demarcar los bordes de la tabla. Se pone como valor del atributo style seguido de igual(<b>=</b>) a uno o varios valores entre las comillas (<b>" "</b>) separados por espacios</p>
+
+<table>
+    <tr>
+        <td></td><td></td><td></td><td></td><td style="color: #000033; "><u>Valor del atributo Style</u></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>    
+     <td></td><td></td><td></td><td></td><td>&darr;</td><td></td><td></td><td></td><td></td>  
+    </tr> 
+    <tr>    
+        <td>&lt</td><td style="color: #66CC00;">table</td>
+        <td style="color: #FF0066;"> style</td>
+        <td>=</td>
+        <td style="color: #000033;"><u> "border: &nbsp;</u></td>
+        <td style="color: #990000;"><u>1px solid  blue ;</u></td>
+        <td>"&gt</td>
+     </tr>
+     <tr>
+        <td></td><td style="color: #66CC00;">&uarr;</td>
+         <td style="color: #FF0066;">&uarr;</td><td></td><td style="color: #000033;">&uarr;</td><td style="color: #990000;">&uarr;</td><td></td><td></td><td></td>
+     </tr>
+      <tr>
+          <td></td><td style="color: #66CC00;">etiqueta</td><td style="color: #FF0066;">atributo</td><td></td><td>propiedad css</td><td style="color: #990000;">valor de la propiedad border</td><td></td><td></td><td></td>
+     </tr>
+</table>    
+<p>Los bordes se pueden definir uno por uno o los cuatro a la vez; cuando definimos uno a uno se empieza por el borde superior, luego el borde derecho, despues el borde inferior y por ultimo el borde izquierdo separados por un espacio entre si. </p>
+<table>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">derecha</td><td></td><td style="color: #FF0066;">izquierda</td></tr>  
+    <tr> 
+        <td></td><td></td><td></td><td></td><td></td><td></td><td>&darr;</td><td></td><td>&darr;</td></tr>  
+     <tr> 
+         <b><td>&lt</td><td> table</td><td> style</td><td>=</td><td> "border: &nbsp; </td><td style"color: #006600;"> 3px</td><td style="color: #FF0000;" > 4px</td><td style="color: #CC0000;"> 3px</td><td style="color: #FF0066;"> 5px;</td><td>"&gt</td></b>
+    </tr>
+     <tr>
+        <td></td><td></td><td></td><td></td><td></td>
+         <td style"color: #006600;">&uarr;</td><td></td><td>&uarr;</td><td></td></tr>  
+    <tr> 
+        <td></td><td></td><td></td><td></td><td></td><td>superior</td><td></td><td style="color: #CC0000;">inferior</td><td></td></tr>
+</table>
+<p>Algunos de los valores de border son:</p>
+<table>
+    <tr>
+	<td><b>#px</b></td><td> Grosor de la línea (específica el número de pixeles)</td></tr>
+    <tr> 	
+	<td><b>solid</b></td><td> Línea continua</td></tr>
+    <tr>
+	<td><b>dashed</b></td><td> Línea discontinua</td></tr>
+    <tr>
+	<td><b>separate</b></td><td> Independiente</td></tr>
+    <tr>
+	<td><b>collapsable</b></td><td> Une los bordes de las celdas adyacentes</td></tr>
+   <tr> 
+	<td><b>color</b></td><td> Color </td></tr>
+   <tr>
+	<td><b>top</b></td><td> Superior</td></tr>
+    <tr>
+	<td><b>botton</b></td><td> Inferior</td></tr>
+    <tr>
+	<td><b>left</b></td><td> Izquierdo</td></tr>
+    <tr>
+	<td><b>righ</b></td><td> Derecho</td></tr>
+    <tr>
+	<td><b>padding</b></td><td>Indica el espacio entre el borde y el contenido de la tabla</td></tr>
+      	</table>
+<table>
+    <tr>
+	<td><b>&lttd style="padding:5px;border: 1px solid black;<b>"&gt&lt/td&gt</b></td><td>Relleno para todos los lados.</td></tr></table>
+<p>El atributo border tambien se puede especificar más para hablar de un sólo borde. Ejemplo.</p>
+<p><b>border-righ-color</b> que hablamos del color del borde derecho.</p>
+    
+    
+              <!--etiquetas autocerradas -->
+<h2>6. Etiquetas autocerradas</h2>
+<p>Las etiquetas de autocerrado son las etiquetas que no admiten contenido. Algunas de ellas son:</p>
+<table>
+    <tr>
+	<td class="1"><b>&ltbr /&gt</b></td><td class="2">Se utiliza para crear un salto de línea.  Pasa al otro renglon</td></tr>
+    <tr>
+	<td class="1"><b>&ltmeta /&gt</b></td><td class="2">Indica el tipo de codificacion que estamos utilizando</td></tr>
+    <tr>
+	<td class="1"><b>&ltimg /&gt</b></td><td class="2">Se utiliza para insertar una imagen</tr>
+    <tr>
+	<td class="1"><b>&ltlink /&gt</b></td><td class="2">Se utiliza para enlazar un archivo HTML con otros archivos </td></tr>
+    <tr>
+	<td class="1"><b>&lthr /&gt</td class="2"></b><td>Representa una línea horizontal para separar diferentes secciones de un documento</td></tr>
+    <tr>
+	<td class="2"><b>&ltinput /&gt</b></td><td>Se utiliza para el ingreso de datos del usuario./td></tr>
+    </td><tr>
+</table>
+        
+        
+                   
+        
+      
+    <!--bibliografía -->
+<h2>Bibliografías</h2>
+<p><strong>HTML color codes</strong></br>
+    http://html-color-codes.info/codigos-de-colores-hexadecimales/</br>
+    Para buscar colores css</p>
+<P><strong>LIBROSWEB</strong></br>
+    http://librosweb.es/referencia/css/</p>
+<P><strong>IRONSPIDER</strong></br>
+http://www.ironspider.ca/webdesign102/tables4layout2.htm</br>
+Tiene ejemplos de paginas y explicaciones</p>
+<p><strong>Haz Una Web.Com</strong></br>
+http://html.hazunaweb.com/106.php</p>
+<p><strong>Aula clic</strong></br>
+http://www.aulaclic.es/access-2010/index.htm</p> 
+<p><strong>publiceuta</strong></br>
+http://www.publiceuta.com/manuales/etiqueta.htm</p>
+<p><strong>Virtualnauta</strong></br>
+http://www.virtualnauta.com/html-etiqueta-br</p>
+<p><strong>Vagabundia</strong></br>
+    http://vagabundia.blogspot.com/2008/02/las-propiedades-css-margin-padding-y.htm</p>
+<p><strong>DESARROLLADORES WEB</strong></br>
+http://www.desarrolloweb.com/articulos/atributo-position-css.html</p>
+<p><strong>W3SCHOOLS.COM</strong></br>
+http://www.w3schools.com/cssref/pr_class_float.asp</p>
+<p><strong>XURL:ES</strong></br>
+http://xurl.es/</br>
+Sirve para acortar los links</p>
+
   </body>
 </html>
