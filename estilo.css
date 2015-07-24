@@ -5,6 +5,7 @@ h1, h2 {
 p {
     font-family: Garuda;
     font-size:16px;
+}
 span { 
     color: cornflowerblue;
 }
@@ -15,6 +16,6 @@ img {
     width: 300px;
     height: 200px;
 }
-    strong {
-        color: darkgreen;
-    }
+strong {
+    color: darkgreen;
+}
