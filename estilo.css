@@ -1,0 +1,20 @@
+h1, h2 {
+    color: red;
+    font-family: Garamond;
+}
+p {
+    font-family: Garuda;
+    font-size:16px;
+span { 
+    color: cornflowerblue;
+}
+b {
+    color: darkgreen;     
+}
+img {
+    width: 300px;
+    height: 200px;
+}
+    strong {
+        color: darkgreen;
+    }
