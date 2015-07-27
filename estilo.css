@@ -19,3 +19,8 @@ img {
 strong {
     color: darkgreen;
 }
+a {
+    color: cornflowerblue;
+    font-family: Garamond;
+    font-size: 16px;
+}
