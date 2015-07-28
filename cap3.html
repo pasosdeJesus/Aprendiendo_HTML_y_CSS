@@ -2,10 +2,783 @@
 <html>
   <head>
     <title>Capitulo 3</title>
-    <meta charset="utf-8"/>
-  </head>
-  <body>
-    <h1 style="color:red;font-family:currier;">Capítulo 3</h1>
-    <p>Debo mirar para poder añadir textos</p>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+     <h1>HTML/CSS</h1>
+
+            
+            <a href="#Como asociar HTML y CSS">Como asocciar HTML y CSS</a></br>
+            <a href="#Elementos">Elementos</a></br>
+            <a href="#Selector">Selector</a></br>
+            <a href="#Selector Universal">Selector Universal</a></br>
+            <a href="#Selectores múltiples<">Selectores múltiples</a></br>
+            <a href="#Selectores anidados">Selectores anidados</a></br>
+            <a href="#Árbol genealógico">Árbol genealógico</a></br>
+            <a href="#Selectores Clase">Selectores Clase</a></br>
+            <a href="#Selectores Identificador">Selectores Identificador</a></br>
+            <a href="#Pseudo-Selectores">Pseudo-Selectores</a></br>
+            <a href="#Enlaces">Enlaces</a></br>
+            <a href="#Primer hijo">Primer hijo</a></br>
+            <a href="#Propiedades del texto">Propiedades del texto</a></br>
+            <a href="#Valores de respaldo">Valores de respaldo</a></br>
+            <a href="#Etiqueta div">Etiqueta div</a></br>
+            <a href="#Etiqueta span">Etiqueta span</a></br>
+            <a href="#Comentario">Comentario</a></br>
+            <a href="#Colores">Colores</a></br>
+            <a href="#Píxeles y Em">Píxeles y Em</a></br>
+            <a href="#Propiedad Border">Propiedad Border</a></br>
+            <a href="#Propiedad Margin">Propiedad Margin</a></br>
+            <a href="#Propiedad Padding">Propiedad Padding</a></br>
+            <a href="#Propiedad Text-decoration">Propiedad Text-decoration</a></br>
+            <a href="#Propiedad Position">Propiedad Position</a></br>
+            <a href="#Propiedad display">Propiedad display</a></br>
+            <a href="#Valores negativos">Valores negativos</a></br>
+            <a href="#Propiedad Float">Propiedad Float<</a></br>
+            <a href="#Propiedad clear">Propiedad clear</a></br>
+            <a href="#Propiedad white-space">Propiedad white-space</a></br>
+            <a href="#Bibliografía">Bibliografía</a></br>
+            <a href="#"></a></br>
+            <a name=""></a>
+        
+            
+             
+            <!--HTML/CSS -->
+        <p><strong>HTML</strong> Es el contenido/estructura funcional de una pagina Web.</br>
+<strong>CSS</strong> Hojas de Estilo en Cascada (del inglés Cascading Style Sheets), es un lenguaje que sirve de complemento para controlar la apariencia y el estilo de HTML. CSS describe como los elementos dispuestos en la página son presentados al usuario.</br>En CSS se puede aplicar el formato cuando corresponde más de un estilo.</br>Se puede aplicarle el mismo formato a diversos elementos de HTML sin reescribir el código una y otra vez.</br>Se puede aplicar una apariencia y un formato similares a varias páginas de HTML desde un sólo archivo CSS.</br>Se puede hacer que un selector tenga muchas propiedades.</p>
+
+
+
+
+        <!--Como asociar HTML y CSS -->
+<a name="Como asociar HTML y CSS"></a>
+<h2>Como asociar HTML y CSS</h2>
+
+        <p>Para asociar las reglas de estilo de CSS con HTML hay tres maneras:</br>1. Directamente colocamos en la etiqueta de cada elemento con atributo style, entre (<b>" "</b>) comillas, cada propieded separada de su valor por (<b>:</b>) dos puntos y de otra propiedad por (<b>;</b>) punto y coma, quedara definido solo ese elemento. Ejemplo:</br>
+            <table>
+                <tr>
+                    <td><b>&ltp style="color:#0B0B61; background-color:#9FF781; font-family:Verdana; font-size:25px; text-align:center" &gt</b>  <strong>Asi es uno por uno</strong>  <b>&lt/p&gt</b>
+                    </td>
+                    <td>
+                        <p style="color:#0B0B61;background-color:#9FF781;font-family:Verdana;font-size:25px;text-align:center">Asi es uno por uno</p>
+                    </td>
+                </tr>
+            </table>
+            </br>2. En la sección de cabecera(head) de la página definimos estilo para un elemento y todos los elementos iguales en la página tendran el mismo estilo. Ejemplo:</br>
+            <table>
+                <tr>
+                    <td> <b>&lthead&gt</br>
+                 &nbsp&nbsp&nbsp&nbsp &ltstyle type"text/css"&gt</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp {</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor:#0B0B61;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbackground-color:#9FF781;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfont-family:verdana;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfont-size:25px;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsptext-align:center;</br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                &nbsp&nbsp&nbsp&nbsp&lt/style&gt</br>
+            &lt/head&gt</br>
+            &ltbody&gt</br>
+                &nbsp&nbsp&nbsp&nbsp&ltp>Asi es en head&lt/p&gt</br>
+            &lt/body&gt</b>
+
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp
+                        <p style="color:#0B0B61;background-color:#9FF781;font-family:vardana;font-size:25px;text-align:center">Asi es en head</p>
+                    </td>
+                </tr>
+            </table>
+            <p>En este caso todos los párrafos de la página tendran el mismo formato.</p>3. Agrupar las reglas de estilo en un archivo independiente con extensión CSS, Conectando el archivo HTML con el archivo CSS y para eso debemos crear una etiqueta link entre las etiquetas de <b> &ltheead&gt&lt/head&gt </b> en el archivo HTML. La etiqueta link necesita 3 atributos:</br>. Un atributo type que indica al navegador cual es el formato de archivo "<b>text/css</b>".</br>. Un atributo rel que se usa para definir la relación entre el archivo enlazado y el documento HTML "<b>stylesheet</b>".</br>. Un atributo href que hace referencia al archivo CSS externo que afectará la presentación de esta página.</br>
+<b> &ltlink type="text/css" rel="stylesheet" href="stylesheet.css" / &gt</b>
+        </p>
+        
+
+
+<!--elementos -->
+<a name="Elementos"></a>
+<h2>Elementos</h2>
+
+        <p>En HTML un elemento esta formado por: Una etiqueta de apertura, cero o más atributos y un texto encerrado por las etiquetas. Una etiqueta de cierre.</p>
+        <p><b>&ltp&gt</b>Texto <b>&lt/p&gt</b>
+            <p>
+                
+                
+                
+                
+ <!--selector --> 
+<a name="Selector"></a>
+<h2>Selector</h2>
+
+<p>En CSS cada Elemento de HTML es un <strong>Selector</strong>
+</br>En CSS cada atributo de HTML es una <strong>propiedad</strong>.</b>
+</br>En CSS cada valor de HTML es un <strong>Valor</strong>.</b>
+</br>
+<p>El punto y coma (<b>; </b>) le indica a CSS que es el fin de un par propiedad-valor</p>
+<p>La sintaxis de CSS es diferente a la de HTML. El formato general se ve así:</p>
+<table>
+    <tr>
+        <td><strong>selector {</br>
+            &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+        }</strong></b>
+        </td>
+        <td><b>p {</br>
+            &nbsp&nbsp&nbsp&nbsp color: red;</br>
+        }<b></b>
+        </td>
+    </tr>   
+</table>
+        
+                            
+                            
+                            
+  <!--selector universal -->
+<a name="Selector Universal"></a>                           
+<h2>Selector Universal *</h2>
+<p>Este selector se puede usar para aplicar el estilo de CSS a cada elemento en la página. Por ejemplo:</p>
+<table>
+    <tr>
+        <td><strong>* {</br>
+&nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+        } </strong>
+        </td>
+        <td><b>* {</br>
+&nbsp&nbsp&nbsp&nbspborder: 2px solid black;</br>
+        } </b>
+        </td>
+    </tr>
+</table>
+<p> Se creara un borde sólido de dos píxeles de ancho alrededor de cada elemento en la página de HTML</P>
+
+
+
+
+<!--selector múltiple -->
+<a name="Selectores múltiples<"></a>
+<h2>Selectores múltiples</h2>
+<p>Podemos agrupar varios selectores HTML con una misma regla de estilo. Esta característica nos permite ahorrar la escritura de reglas duplicadas para diferentes selectores HTML. Ejemplo, queremos la misma fuente para los selectores h1,h2 y h3 :</br>En HTML:</br>
+<b>&lth1&gtTítulo de nivel 1&lt/h1&gt</br>
+&lth2&gtTítulo de nivel 2&lt/h2&gt</br>
+    &lth3&gtTítulo de nivel 3&lt/h3&gt</b>
+                                </br>En CSS y separados por coma <b>(,)</b> se da el mismo estilo a todos al mismo tiempo.</br>
+<table>
+    <tr>
+        <td>
+<strong>selector 1, selector 2, selector 3 {</br>
+     &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+    }</strong>
+        </td>
+        <td> <b>h1, h2, h3 {</br>
+  &nbsp&nbsp&nbsp&nbsp font-family:verdana;</br>
+}</b></br>
+        </td>
+    </tr>
+</table>
+<p> También podemos además de los estilos iguales colocar a cada selector estilos únicos para cada uno. así:</br>
+<table>
+    <tr>
+        <td>
+<b>h1 {</br>
+  &nbsp&nbsp&nbsp&nbsp color:#2EFEC8;</br>  
+}</br>
+h2 {</br>
+    &nbsp&nbsp&nbsp&nbsp color:#FF00FF;</br>
+}</br>
+h3 {</br>
+    &nbsp&nbsp&nbsp&nbsp color:#00FF00;</br>
+}</b></td>
+        <td>
+<h1 style="color:#2EFEC8">Título 1</h1> </br> 
+<h2 style="color:#FF00FF;">Título 2</h2></br>
+<h3 style="color:#00FF00;">Título 3<h3></br>
+        </td>
+    </tr>
+</table>
+
+
+
+<!--Selectores anidados --> 
+    <a name="Selectores anidados"></a>
+<h2>Selectores anidados</h2>
+
+
+
+<!--Árbol genealógico -->
+ <a name="Árbol genealógico"></a>
+<h2>Árbol genealógico</h2>
+
+
+
+ <!--selectores clase -->
+    <a name="Selectores Clase"></a>
+<h2>Selectores Clase</h2>
+<p>Sirven para aplicar el mismo estilo a varios selectores, simplemente puedes aplicar la misma  clase a todos esos elementos de HTML y luego definir el estilo para esa  clase en la pestaña de CSS.</br>
+Los selectores <strong>Class</strong> son asignadas a los elementos de HTML asi:</p>
+<p><b>&ltdiv class="cuadrado"&gt&lt/div&gt</b>                                      </br>
+En CSS, class se identifican con un punto (<b>.</b>) así:</p>
+<table>
+    <tr>
+        <td><strong> punto(.) y nombre que dimos a class en HTML {</br>
+         &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+         &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+        }</strong>
+        </td>
+        <td><b>.cuadrado {</br>    &nbsp&nbsp&nbsp&nbspheight: 100px;</br>
+    &nbsp&nbsp&nbsp&nbspwidth: 100px;</br>
+}</b> 
+        </td>
+    </tr>
+</table>
+<p>Esto te permite tomar elementos de diferentes tipos y darles el mismo estilo.</p>
+                                   
+
+
+
+<!--selector identificador -->
+<a name="Selectores Identificador"></a>                                    
+<h2>Selectores Identificador</h2>
+<p>Los identificadores son asignados a los elementos de HTML usando la letras <b>id</b> y un signo de igual(<b>=</b>):</p>
+<p><b>&ltdiv id="primero"&gt&lt/div&gt</b>
+                                    </p>
+<p>Los identificadores se reconocen en CSS con un signo de numeral (<b>#</b>):</p>
+<table>
+    <tr>
+        <td><strong># nombre asignado al id en HTML {</br>
+   &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+}<strong>
+        </td>
+        <td><b>#primero {</br>
+   &nbsp&nbsp&nbsp&nbsp height: 50px;</br>
+}</b>
+        </td>
+    </tr>
+</table>
+<p>La diferencia fundamental en la definición de un estilo por medio de Id con respecto a las clases, es que sólo podremos aplicar dicho estilo a una sola marca dentro de la página HTML, ya que todos los Id que se definen en una página HTML deben ser distintos.</p>
+
+        
+  
+
+    <!--pseudo-selectores -->
+<a name="Pseudo-Selectores"></a>
+<h2>Pseudo-Selectores</h2>
+<p>Un Pseudo-selector es el que hace referencia a un elemento especifico  de HTML</p>
+<p>La sintaxis de CSS para los pseudo-selectores es:</p>
+<table>
+    <tr>
+        <td><strong>elemento: pseudo-selector {</br>
+&nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+}</strong>
+        </td>
+        <td><b>elemento: pseudo-selector {</br>
+&nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
+}</b>
+        </td>
+    </tr>
+</table>
+<p>Algunos pseudo-selectores son:</p>
+
+
+
+
+<!--enlaces -->
+  <a name="Enlaces"></a>                                  
+<h2> Enlaces</h2>
+<p>Existe una cantidad de pseudo-selectores útiles para los enlaces, incluidos: puedes controlar la apariencia de enlaces que han sido y que no han sido visitados; e incluso de aquellos sobre los que el usuario pasa el puntero pero que aún no ha hecho click</p>
+<p><b>a:link</b>: Un enlace sin visitar.</b>
+                                    </p>
+<p><b>a:visited</b>: Un enlace que ha sido visitado.</p>
+<p><b>a:hover</b>: Un enlace sobre el que pasas el puntero.</p>
+<p>Asi en HTML</p>
+<p><b>&lta href="dirección de url"&gt&lt/a&gt</b>
+                                    </p>
+<p>Asi en CSS</p>
+<table>
+    <tr>
+        <td><strong>a: link {</br> 
+&nbsp&nbsp&nbsp&nbsp color: red </br>
+}</strong>
+        </td>
+        <td><b>a: link {</br> 
+&nbsp&nbsp&nbsp&nbsp color: red </br>
+}</b>
+        </td>
+    </tr>
+</table>
+                                    
+
+
+
+<!--primer hijo -->
+<a name="Primer hijo"></a>                                    
+<h2> Primer hijo</h2>
+<p>Otro pseudo-selector útil es first-child. Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. Por ejemplo:</p>
+<p>En HTMl:</p>
+<p><b>&ltdiv&gt</br>
+    &nbsp&nbsp&nbsp&nbsp &ltp&gt</b><strong style="color: red;"> Este es el unico que tiene en cuenta</strong><b>&lt/p&gt</br>
+&nbsp&nbsp&nbsp&nbsp &ltp&gt </b>Este queda igual<b> &lt/p&gt</br>
+&lt/div&gt </b></p>
+<p>Asi es en CSS</p>
+<table>
+    <tr>
+        <td><strong>selector: first-child {</br>
+&nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
+&nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
+&nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
+}</strong>
+        </td>
+        <td><b>p: first-child {</br>
+&nbsp&nbsp&nbsp&nbsp color: red;</br>
+&nbsp&nbsp&nbsp&nbsp font-family: cursive;</br>
+&nbsp&nbsp&nbsp&nbsp text-decoration: none;</br>
+}</b>
+        </td>
+    </tr>
+</table>
+                                    
+
+
+
+<!--Propiedades del texto -->
+<a name="Propiedades del texto"></a>                                     
+<h2>Propiedades del texto</h2>
+<p>Contamos con una serie de propiedades relacionadas a fuentes:</br>
+<table>
+        <tr>
+            <td><b>font-family</b>
+            </td>
+            <td>Fuente de un elemento, algunas de las fuentes más comunes que puede acceder el navegador son: Arial, Arial Black, Arial Narrow, Courier New, Georgia, Impact, Tahoma, Times New Roman, Verdana, etc.</td>
+        </tr>   
+        <tr>
+            <td><b>font-size</b>
+            </td>
+            <td>Tamaño de la fuente se puede dar en px(pieles), %(porcentajes) y em(). </td>
+        </tr>
+        <tr>
+            <td><b>font-style</b> 
+            </td>
+            <td>Estilo de fuente para un texto y algunos valores son: oblicue, italic, normal.</td>
+        </tr>
+        <tr>
+            <td><b>font-weight</b>
+            </td>
+            <td>Establece el grosor o lo fino de los caracteres de un texto y algunos de sus vaores son: normal, bold(delgada), bolder(gruesa), lighter(), #(entre más grande el número, más gruesa es).</td>
+        </tr>
+        <tr>
+            <td><b>font-variant</b>
+            </td>
+            <td>Puede cambiar el texto en mayúsculas , y puede asumir estos valores:small-caps(mayúsculas pero más pequeñas que las mayúsculas originales) o normal.</td>
+        </tr>
+        <tr>
+            <td><b>letter-spacing</b>
+            </td>
+            <td>permiten indicar el espacio que debe haber entre los caracteres</td>
+        </tr>
+        <tr>
+            <td><b>word-spacing</b>
+            </td>
+            <td>permiten indicar el espacio que debe haber entre las palabras</td>
+    </tr>
+    <tr>
+            <td><b>text-indent</b>
+            </td>
+            <td>indenta la primera linea de un texto. A partir de la segunda línea, el texto aparece sin indentación. Podemos indicar un valor negativo con lo que la indentación es hacia la izquierda.</td>
+    </tr>
+    <tr>
+        <td><b>text-transform</b>
+        </td>
+            <td>puede inicializarse con alguno de los siguientes valores: <b>none</b> (No provoca cambios en el texto), capitalize(Dispone en mayúsculas el primer caracter de cada palabra), lowercase(Convierte a minúsculas todas las letras del texto), uppercase(Dispone en mayúsculas el primer caracter de cada palabra.)</td>
+    </tr>
+</table>
+<p>Se puede agrupar tres propiedades en el archivo de estilos:</br> 
+ <b>p {</br>
+  &nbsp&nbsp&nbsp&nbsp font:bold italic 25px verdana;                                            </br>
+}</b></br>Es importante recordar que fon-weight va de primeras, font-size y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.</p>
+                                        
+
+
+
+<!--valores de respaldo -->
+ <a name="Valores de respaldo"></a>                                       
+<h2>Valores de respaldo</h2>
+<p>Se puede indicarle a CSS que pruebe varias fuentes, yendo de una a la siguiente si la que estás buscando no está disponible.</p>
+<p>Por ejemplo, si se escribe:</p>
+<table>
+    <tr>
+        <td><strong>p {</br>
+    &nbsp&nbsp&nbsp&nbsp font-family: valor 1, Valor 2, valor 3;  </br>
+    }</strong>
+        </td>
+        <td><b>p {</br>
+    <p>&nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
+    }  </b>
+        </td>
+    </tr>
+</table>
+<p>CSS intentará primero aplicar Tahoma a los párrafos. Si el computador del usuario no tiene esa fuente, a continuación probará con Verdana, y si esa no funciona, mostrará una fuente sans-serif predeterminada.</p>
+                                            
+
+
+
+<!--Etiqueta div -->
+<a name="Etiqueta div"></a>
+<h2>4. Etiqueta div</h2>
+<p><b>&ltdiv&gt&lt/div&gt</b> nos permite dividir en bloques (es decir en piezas diferentes) a las cuales podemos definir el alto y el ancho y además podemos dar atributos especiales como el color, etc.</p>
+<p>Estos atributos tambien se utilizan para las tablas</p>
+<table>
+    <tr>
+        <td><b>height</b>
+        </td>
+        <td>Para definir el alto</td>
+    </tr>
+    <tr>
+        <td><b>width</b>
+        </td>
+        <td>Para definir el ancho</td>
+    </tr>
+    <tr>
+        <td><b>background-color</b>
+        </td>
+        <td>Para definir el color del fondo</td>
+    </tr>
+    <tr>
+        <td><b>border</td><td>Para definir los bordes </td></tr>
+    <tr>
+	    <td><b>border-radius</b>
+        </td>
+        <td>Para redondear un poco o mucho las esquinas del div</td>
+    </tr>
+    <tr>
+        <td><b>margin</b>
+        </td>
+        <td>Establece la margen horizontal y vertical de un elemento respecto a los elementos circundantes</td>
+    </tr>
+    <tr>
+        <td><b>position</b>
+        </td>
+        <td>Indica como debe ubicarse en el bloque y sus valores pueden ser: static, relative, absolute, fixed, inherit</td>
+    </tr>
+    <tr>
+        <td><b>float</b>
+        </td>
+        <td>Es y sus valores pueden ser: left, right, none, inherit </td>
+    </tr>
+    <tr>
+        <td><b>padding</b>
+        </td>
+        <td>Establece el espacio entre el elemento y su borde</td>
+    </tr>
+</table>
+<p>También podemos unir varios atributos unidos con un guion (<b>-</b>), ejemplo: border-top-width, border-botton-width, border-left-width, border-right-width</p>
+<p>Asi se define: <b>&ltdiv style="width:100px; height:100px; background-color: #81F7D8; clear:right;"&gt&lt/div&gt</b> y se vera asi:
+<div style="width:100px; height:100px; background-color: #81F7D8; border: 2px solid red;"></div>
+<p>Estos segmentos también se pueden enlazar rodeandolos con las etiquetas <b>&lta&gt&lt/a&gt</b>
+
+                                                    
+                                                    
+                                                    
+                                                    
+<!--span -->
+<a name="Etiqueta span"></a>
+<h2>5. Etiqueta span</h2>
+<p><b>&ltspan&gt&lt/span&gt</b> Esta etiqueta nos sirve para controlar el estilo de un elemento en línea, tales como un texto, una palabra, una imagen,etc. Y podemos cambiar todos los atributos color, fondo, tamaño, etc.</p>
+<p>Esta etiqueta se puede utilizar tambien en tablas</p>
+<p>De el parrafo "La vida es hermosa" solo cambiaremos la palabra "hermosa" asi:
+<b>&ltp&gt</b>La vida es <b>&ltspan style="color:red"&gthermosa&lt/span&gt&lt/p&gt</b> y se vera asi:</p>       
+<p>La vida es <span style="color:red; font-family:cursive;">hermosa</span></p>
+<table>
+    <tr>
+        <td><b>height</b>
+        </td>
+        <td>Para definir el alto</td>
+    </tr>
+    <tr>
+        <td><b>width</b>
+        </td>
+        <td>Para definir el ancho</td>
+    </tr>
+    <tr>
+        <td><b>background-color</b>
+        </td>
+        <td>Para definir el color del fondo</td>
+    </tr>
+    <tr>
+        <td><b>border</td><td>Para definir los bordes </td></tr>
+    <tr>
+	    <td><b>border-radius</b>
+        </td>
+        <td>Para redondear un poco o mucho las esquinas del div</td>
+    </tr>
+    <tr>
+        <td><b>margin</b>
+        </td>
+        <td>Es el espacio entre un elemento y otro elemento circundante, la margen es horizontal y vertical</td>
+    </tr>
+    <tr>
+        <td><b>position</b>
+        </td>
+        <td>Es y sus valores pueden ser: static, relative, absolute, fixed, inherit</td>
+    </tr>
+    <tr>
+        <td><b>float</b>
+        </td>
+        <td>Es y sus valores pueden ser: left, right, none, inherit</td>
+    </tr>
+    <tr>
+        <td><b>padding</b>
+        </td>
+        <td>Establece el espacio entre un elemento y su contenidoo</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+                                                    
+                                                        
+
+    
+    <!--comentarios -->
+<a name="Comentario"></a>                                              <h2>Comentario</h2>
+<p>Los Comentarios son recordatarios para nosotros mismos pues el computador no lo reconoce.</br>Los comentarios de HTML lucen así:</br>
+<b>&lt!--¡Soy un comentario!--&gt</b>                                                    </br>
+Los comentarios de CSS lucen así:</br>
+<b>/*¡Soy un comentario!*/</b>                                                  </p>
+                                                   
+
+
+
+<!--colores -->
+<a name="Colores"></a>                                                <h2>Colores</h2>
+<p>CSS puede entender millones de colores en forma de valores hexadecimales.</br>El conteo hexadecimal es en base 16. Cada dígito puede ser números de (0...9) y letras de (a...f)</br>Los valores hex siempre comienzan con un signo de numeral (<b>#</b>), tienen hasta seis "dígitos" de largo y no distinguen entre mayúsculas y minúsculas. #FFC125 y #ffc125 representan el mismo color.</p>
+                                                    
+
+
+<!--pixeles y em -->
+ <a name="Píxeles y Em"></a>                                                    
+<h2>Píxeles y Em</h2>
+<p>Cuando ajustamos el tamaño de la fuente, especificamos que la unidad que debemos usar es px (de "píxeles"), así:</br>
+<b>p {</br>
+    &nbsp&nbsp&nbsp&nbsp font-size: 10px;</br>
+}</b></br>
+<p>Un píxel es un punto en la pantalla del computador. Cuando se habla de pixeles , se habla de tamaños especificos.</br>Para una pantalla Smartphone que el tamaño es completamente diferente se utilizan los <strong>em</strong>. Son diferente de las etiquetas <strong>&ltem&gt &lt/em&gt</strong> que usamos para dar énfasis.</br>La unidad de font-size em es una medida relativa. un em es igual al tamaño de fuente predeterminado en cualquier pantalla que el usuario esté usando. En Smartphones el tamaño se duplica o se divide de acuerdo al tamaño del Smartphone sencillamente se tiene en cuenta: 1em es el tamaño de fuente que se usa normalmente, así que 2em es el doble de grande, y 0.5em es la mitad de ese tamaño</p>
+<table>
+    <tr>
+        <td><strong>selector {</br>
+    &nbsp&nbsp&nbsp&nbsp  font-size: valor;</br>
+        }</strong>
+        </td>
+        <td><b>p {</br>
+            &nbsp&nbsp&nbsp&nbsp font-size: 1em;</br>
+        }</td>
+    </tr>
+</table>
+        
+        
+    
+         <!--border -->
+<a name="Propiedad Border"></a>
+<h2>Propiedad Border</h2>
+<p>Border es la línea de borde del elemento.<br>
+ Border admite varios valores:</br>
+<table>
+    <tr>
+        <td><b>none</b>:</td>
+        <td>No se muestra ningún borde.</td>
+    </tr>
+    <tr>
+    <td><b>hidden</b>:</td>
+    <td>Visualmente es igual a none, pero para el navegador es diferente a la hora de asociarlos con los bordes adyacentes.</td>
+    </tr>
+    <tr>
+        <td><b>dotted</b>:</td>
+        <td>Borde punteado, es un borde formado por una serie de puntos separados por espacios.</td>
+    </tr>
+    <tr>
+        <td><b>dashed</b>:</td>
+        <td>Borde discontinuo, formado por una serie de pequeñas líneas separadas por espacios.</td>
+    </tr>
+    <tr>
+        <td><b>solid</b>:</td>
+        <td>Borde continuo, formado por una línea continua.</td>
+    </tr>
+    <tr>
+        <td><b>double</b>:</td>
+        <td>Borde doble, formado por dos líneas cotinuas.</td>
+    </tr>
+    <tr>
+        <td><b>groove</b>:</td>
+        <td>Borde hundido, que visualmente parece que está por debajo del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><b>ridge</b>:</td>
+        <td>Borde saliente, que visualmente parece que está por encima del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><b>inset</b>:</td>
+        <td>Borde hundido, que provoca que el elmento que encierra parezca que está por debajo del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><b>outset</b>:</td>
+        <td>Borde saliente, que provoca que el elemento que encierra parezca que está por encima del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>    
+        <td><b>inherit</b>:</td>
+        <td>Que hereda del elemento padre</td>
+    </tr>
+    <tr>
+        <td><b>collapse</b>
+        </td>
+    </tr>
+    <tr>
+        <td><b> border-radius</b>:</td>
+        <td>Esta propiedad modifica las esquinas de los objetos de HTML, si colocamos al 100% quedara redondo.</td>
+    </tr>
+</table>
+<p>Por ejemplo, para hacer un borde de 2 píxeles de ancho, sólido, y de color rojo, es asi:</p>
+<table>
+    <tr>
+        <td><strong>selector {</br>
+&nbsp&nbsp&nbsp&nbsp border: valor valor valor;</br>
+}</strong>
+        </td>
+        <td><b>selector {</br>
+&nbsp&nbsp&nbsp&nbsp border: 2px solid red;</br>
+    }</b>
+        </td>
+    </tr>
+</table>
+<p>También podemos colocar 2 valores para los cuatro lados, el primer valor es para top y botton y el segundo para right y left,</p>
+                                                
+                                                
+
+
+
+<!--margin -->
+<a name="Propiedad Margin"></a>                                                
+<h2>Propiedad Margin</h2>
+
+
+
+
+<!--paddimg -->
+<a name="Propiedad Padding"></a>
+<h2>Propiedad Padding</h2>
+
+
+
+<!--text decoration -->
+<a name="Propiedad Text-decoration"></a>                                                         <h2>Propiedad Text-decoration</h2>
+<p>Los enlaces tienen muchas de las mismas propiedades del texto normal. También tienen una propiedad, text-decoration, que puede modificar para darle un toque un poco más personalizado.</p>
+<p>Algunos de los valores de text-decoration son:</p>
+<p><b>Under line </b>: Se muestra subrayado todas las líneas del texto</p>
+<p><b>over line </b>: Subrayado en la parte superior del texto</p>
+<p><b>line-through </b>: El texto se ve tachado con una línea continua</p>
+<p><b>blink </b>: El texto parpadea apareciendo y desapareciendo de forma alternativa</p>
+<p><b>none </b>: Es un texto normal, sin nada.</p>
+                                                        
+
+
+
+
+                                                           
+ <!--position -->
+<a name="Propiedad Position"></a></br>                                                        
+<h2>Propiedad Position</h2>
+
+
+
+
+
+<!--display -->
+<a name="Propiedad display"></a>
+<h2>Propiedad display</h2>
+
+
+
+ <!--valores negativos -->
+<a name="Valores negativos"></a>                                                                
+<h2>Valores negativos</h2>
+        <p>Cuando le das un valor positivo de padding o de margin, CSS coloca ese espacio en medio del elemento y de su referente: por ejemplo, si tienes un <b>                                                    &ltdiv&gt</b> y quieres darle un margen izquierdo, margin-left, con valor 20px, CSS coloca veinte píxeles en medio del margen izquierdo del <b>&ltdiv&gt        </b> y el borde de la pantalla. Esto efectivamente desplaza al
+ <b>&ltdiv&gt</b> veinte píxeles a la derecha.</p>
+ <p>Si quieres desplazar un elemento en la otra dirección, puedes darle a CSS un valor negativo: margin-left: -20px desplazará el elemento veinte píxeles a la izquierda.</p>
+                                                                
+                                                                            
+                                                                            
+    <!--float -->
+    <a name="Propiedad Float"></a>                                                       
+<h2>Propiedad Float</h2>
+<p>Float quiere decir que se tienen varios elementos flotantes, todos saben que los demás están allí, y ninguno se superpone.</p>
+<p>Sus valores son: right, left, both</br>En Css:</p>
+<table>
+    <tr>
+        <td><strong>selector {</br>
+            float: valor</br>
+    }</strong>
+        </td>
+        <td><b>div {</br>
+            float: right;</br>
+    }</b>
+        </td>
+    </tr>
+</table>
+<p>A veces combinamos elementos grandes, flotantes y no flotantes, y los elementos terminan superponiéndose.</p>
+                                                                
+
+
+
+<!--clear -->
+<a name="Propiedad clear"></a>                                                        <h2>Propiedad clear</h2> 
+<p>Se usa clear para que un elememto flotante se separe de los otros elememtos qu esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior. como right, left, o both</br>La sintaxis es :</p>
+<table>
+    <tr>
+        <td><strong>elemento {</br>
+<p>&nbsp&nbsp&nbsp&nbsp clear: valor</br>
+        }</strong>
+        </td>
+        <td><b>div {</br>
+<p>&nbsp&nbsp&nbsp&nbsp clear: left</br>
+        }</b>
+        </td>
+    </tr>
+</table>
+                                                                
+
+
+
+<!--white-space -->
+<a name="Propiedad white-space"></a>                                                                 <h2>Propiedad white-space</h2> 
+<p>Permite variar el comportamiento de los espacios en blanco. El estándar CSS 2.1 define cinco modelos diferentes de tratamiento de espacios en blanco:</p>
+ <p><b>normal</b>: los espacios en blanco sobrantes y los saltos de línea se eliminan. No obstante, el texto se muestra en tantas líneas como sea necesario para que sus contenidos no se salgan del elemento contenedor.</p>
+<p><b>pre</b>: no se eliminan los espacios en blanco sobrantes y sólo se muestran los saltos de línea incluidos en el texto original. Este comportamiento puede provocar que los contenidos de texto se salgan de su elemento contenedor.</p>
+<p><b>nowrap</b>: se comporta igual que normal en los espacios en blanco, pero no añade saltos de línea en el texto original, por lo que los contenidos se pueden salir de su elemento contenedor. 
+<p><b>pre-wrap</b>: se comporta igual que pre, pero se introducen los saltos de línea que sean necesarios para que los contenidos de texto nunca se salgan de su elemento contenedor.</p>
+<p><b>pre-line</b>: se eliminan los espacios en blanco sobrantes, pero se respetan los saltos de línea originales y se crean tantos saltos de línea como sean necesarios para que el contenido de texto no se salga de su elemento contenedor.</p>
+                                                                
+
+
+
+    <!--bibliografía-->
+<a name="Bibliografía"></a>                                           <h2>Bibliografía</h2>
+<p><strong>COMOCREARUNSITIOWEB</strong>
+</br>https://www.comocrearunsitioweb.com/sintaxis-y-propiedades-css</p>
+<p><strong>DesarrolloWeb.com </strong>Etiqueta <caption></br>
+    http://www.desarrolloweb.com/articulos/600.php</p>
+<p><strong>LIBROSWEB</strong>
+ </br>http://librosweb.es/xhtml/capitulo_3/espacios_en_blanco_y_nuevas_lineas.html</p>
+<p>imo.om todas las redes sociales en una sola</p>
+<p><strong>Befunky</strong>
+</br>para editar fotos en linea</p>
+<p><strong>HTML color codes</strong>
+</br>http://html-color-codes.info/codigos-de-colores-hexadecimales/</br>para buscar colores css</p>
+<p><strong>Haz Una Web.com</strong>
+</br>http://css.hazunaweb.com/210.php</p>
+<p><strong>HTML.net</strong>
+</br>http://es.html.net/tutorials/css/lesson5.php</p>
+<p><strong>W3SCHOOLS:COM</strong>
+</br>http://www.w3schools.com/css/</p>
+
+
+
+
   </body>
 </html>
