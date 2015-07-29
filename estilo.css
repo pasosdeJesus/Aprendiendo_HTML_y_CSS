@@ -18,7 +18,7 @@ img {
     color: darkgreen;
 }
 a {
-    color: cornflowerblue;
+    color: -webkit-link;
     font-family: Garamond;
     font-size: 16px;
 }
