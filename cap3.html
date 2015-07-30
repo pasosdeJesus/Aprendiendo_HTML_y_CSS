@@ -55,10 +55,10 @@
 <a name="Como asociar HTML y CSS"></a>
 <h2>Como asociar HTML y CSS</h2>
 
-        <p>Para asociar las reglas de estilo de CSS con HTML hay tres maneras:</br>1. Directamente colocamos en la etiqueta de cada elemento con atributo style, entre (<b>" "</b>) comillas, cada propieded separada de su valor por (<b>:</b>) dos puntos y de otra propiedad por (<b>;</b>) punto y coma, quedara definido solo ese elemento. Ejemplo:</br>
+        <p>Para asociar las reglas de estilo de CSS con HTML hay tres maneras:</br>1. Directamente colocamos en la etiqueta de cada elemento con atributo style, entre (<strong class="verde">" "</strong>) comillas, cada propieded separada de su valor por (<strong class="verde">:</strong>) dos puntos y de otra propiedad por (<strong class="verde">;</strong>) punto y coma, quedara definido solo ese elemento. Ejemplo:</br>
             <table>
                 <tr>
-                    <td><b>&ltp style="color:#0B0B61; background-color:#9FF781; font-family:Verdana; font-size:25px; text-align:center" &gt</b>  <strong>Asi es uno por uno</strong>  <b>&lt/p&gt</b>
+                    <td><strong class="verde">&ltp style="color:#0B0B61; background-color:#9FF781; font-family:Verdana; font-size:25px; text-align:center" &gt</strong>  <span>Asi es uno por uno</span><strong class="verde">&lt/p&gt</strong>
                     </td>
                     <td>
                         <p style="color:#0B0B61;background-color:#9FF781;font-family:Verdana;font-size:25px;text-align:center">Asi es uno por uno</p>
@@ -68,7 +68,7 @@
             </br>2. En la sección de cabecera(head) de la página definimos estilo para un elemento y todos los elementos iguales en la página tendran el mismo estilo. Ejemplo:</br>
             <table>
                 <tr>
-                    <td> <b>&lthead&gt</br>
+                    <td> <strong class="verde">&lthead&gt</br>
                  &nbsp&nbsp&nbsp&nbsp &ltstyle type"text/css"&gt</br>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp {</br>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor:#0B0B61;</br>
@@ -81,7 +81,7 @@
             &lt/head&gt</br>
             &ltbody&gt</br>
                 &nbsp&nbsp&nbsp&nbsp&ltp>Asi es en head&lt/p&gt</br>
-            &lt/body&gt</b>
+            &lt/body&gt</strong>
 
                     </td>
                     <td>&nbsp&nbsp&nbsp&nbsp
@@ -89,8 +89,8 @@
                     </td>
                 </tr>
             </table>
-            <p>En este caso todos los párrafos de la página tendran el mismo formato.</p>3. Agrupar las reglas de estilo en un archivo independiente con extensión CSS, Conectando el archivo HTML con el archivo CSS y para eso debemos crear una etiqueta link entre las etiquetas de <b> &ltheead&gt&lt/head&gt </b> en el archivo HTML. La etiqueta link necesita 3 atributos:</br>. Un atributo type que indica al navegador cual es el formato de archivo "<b>text/css</b>".</br>. Un atributo rel que se usa para definir la relación entre el archivo enlazado y el documento HTML "<b>stylesheet</b>".</br>. Un atributo href que hace referencia al archivo CSS externo que afectará la presentación de esta página.</br>
-<b> &ltlink type="text/css" rel="stylesheet" href="stylesheet.css" / &gt</b>
+            <p>En este caso todos los párrafos de la página tendran el mismo formato.</p>3. Agrupar las reglas de estilo en un archivo independiente con extensión CSS, Conectando el archivo HTML con el archivo CSS y para eso debemos crear una etiqueta link entre las etiquetas de <strong class="verde"> &ltheead&gt&lt/head&gt </strong> en el archivo HTML. La etiqueta link necesita 3 atributos:</br>. Un atributo type que indica al navegador cual es el formato de archivo "<strong class="verde">text/css</strong>".</br>. Un atributo rel que se usa para definir la relación entre el archivo enlazado y el documento HTML "<strong class="verde">stylesheet</strong>".</br>. Un atributo href que hace referencia al archivo CSS externo que afectará la presentación de esta página.</br>
+<strong class="verde"> &ltlink type="text/css" rel="stylesheet" href="stylesheet.css" / &gt</strong>
         </p>
         
 
@@ -100,7 +100,7 @@
 <h2>Elementos</h2>
 
         <p>En HTML un elemento esta formado por: Una etiqueta de apertura, cero o más atributos y un texto encerrado por las etiquetas. Una etiqueta de cierre.</p>
-        <p><b>&ltp&gt</b>Texto <b>&lt/p&gt</b>
+        <p><strong class="verde">&ltp&gt</strong><span>Texto</span><strong class="verde">&lt/p&gt</strong>
             <p>
                 
                 
@@ -122,9 +122,9 @@
             &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         }</strong></b>
         </td>
-        <td><b>p {</br>
+        <td><strong class="verde">p {</br>
             &nbsp&nbsp&nbsp&nbsp color: red;</br>
-        }<b></b>
+        }</strong>
         </td>
     </tr>   
 </table>
@@ -142,9 +142,9 @@
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         } </strong>
         </td>
-        <td><b>* {</br>
+        <td><strong class="verde">* {</br>
 &nbsp&nbsp&nbsp&nbspborder: 2px solid black;</br>
-        } </b>
+        } </strong>
         </td>
     </tr>
 </table>
@@ -160,7 +160,8 @@
 <b>&lth1&gtTítulo de nivel 1&lt/h1&gt</br>
 &lth2&gtTítulo de nivel 2&lt/h2&gt</br>
     &lth3&gtTítulo de nivel 3&lt/h3&gt</b>
-                                </br>En CSS y separados por coma <b>(,)</b> se da el mismo estilo a todos al mismo tiempo.</br>
+                                </br>
+En CSS y separados por coma (<strong class="verde">,</strong>) se da el mismo estilo a todos al mismo tiempo.</br>
 <table>
     <tr>
         <td>
@@ -168,9 +169,9 @@
      &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
     }</strong>
         </td>
-        <td> <b>h1, h2, h3 {</br>
+        <td> <strong class="verde">h1, h2, h3 {</br>
   &nbsp&nbsp&nbsp&nbsp font-family:verdana;</br>
-}</b></br>
+}</strong></br>
         </td>
     </tr>
 </table>
@@ -178,7 +179,7 @@
 <table>
     <tr>
         <td>
-<b>h1 {</br>
+<strong class="verde">h1 {</br>
   &nbsp&nbsp&nbsp&nbsp color:#2EFEC8;</br>  
 }</br>
 h2 {</br>
@@ -186,7 +187,7 @@ h2 {</br>
 }</br>
 h3 {</br>
     &nbsp&nbsp&nbsp&nbsp color:#00FF00;</br>
-}</b></td>
+}</strong></td>
         <td>
 <h1 style="color:#2EFEC8">Título 1</h1> </br> 
 <h2 style="color:#FF00FF;">Título 2</h2></br>
@@ -214,7 +215,7 @@ h3 {</br>
 <h2>Selectores Clase</h2>
 <p>Sirven para aplicar el mismo estilo a varios selectores, simplemente puedes aplicar la misma  clase a todos esos elementos de HTML y luego definir el estilo para esa  clase en la pestaña de CSS.</br>
 Los selectores <strong>Class</strong> son asignadas a los elementos de HTML asi:</p>
-<p><b>&ltdiv class="cuadrado"&gt&lt/div&gt</b>                                      </br>
+<p><strong class="verde">&ltdiv class="cuadrado"&gt&lt/div&gt</strong></br>
 En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <table>
     <tr>
@@ -223,9 +224,9 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
          &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         }</strong>
         </td>
-        <td><b>.cuadrado {</br>    &nbsp&nbsp&nbsp&nbspheight: 100px;</br>
+        <td><strong class="verde">.cuadrado {</br>    &nbsp&nbsp&nbsp&nbspheight: 100px;</br>
     &nbsp&nbsp&nbsp&nbspwidth: 100px;</br>
-}</b> 
+}</strong> 
         </td>
     </tr>
 </table>
@@ -238,18 +239,18 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <a name="Selectores Identificador"></a>                                    
 <h2>Selectores Identificador</h2>
 <p>Los identificadores son asignados a los elementos de HTML usando la letras <b>id</b> y un signo de igual(<b>=</b>):</p>
-<p><b>&ltdiv id="primero"&gt&lt/div&gt</b>
+<p><strong class="verde">&ltdiv id="primero"&gt&lt/div&gt</strong>
                                     </p>
-<p>Los identificadores se reconocen en CSS con un signo de numeral (<b>#</b>):</p>
+<p>Los identificadores se reconocen en CSS con un signo de numeral (<strong class="verde">#</strong>):</p>
 <table>
     <tr>
         <td><strong># nombre asignado al id en HTML {</br>
    &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }<strong>
         </td>
-        <td><b>#primero {</br>
+        <td><strong class="verde">#primero {</br>
    &nbsp&nbsp&nbsp&nbsp height: 50px;</br>
-}</b>
+}</strong>
         </td>
     </tr>
 </table>
@@ -269,9 +270,9 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }</strong>
         </td>
-        <td><b>elemento: pseudo-selector {</br>
+        <td><strong class="verde">elemento: pseudo-selector {</br>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
-}</b>
+}</strong>
         </td>
     </tr>
 </table>
@@ -284,12 +285,12 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
   <a name="Enlaces"></a>                                  
 <h2> Enlaces</h2>
 <p>Existe una cantidad de pseudo-selectores útiles para los enlaces, incluidos: puedes controlar la apariencia de enlaces que han sido y que no han sido visitados; e incluso de aquellos sobre los que el usuario pasa el puntero pero que aún no ha hecho click</p>
-<p><b>a:link</b>: Un enlace sin visitar.</b>
+<p><strong class="verde">a:link</strong>: Un enlace sin visitar.</b>
                                     </p>
-<p><b>a:visited</b>: Un enlace que ha sido visitado.</p>
-<p><b>a:hover</b>: Un enlace sobre el que pasas el puntero.</p>
+<p><strong class="verde">a:visited</strong>: Un enlace que ha sido visitado.</p>
+<p><strong class="verde">a:hover</strong>: Un enlace sobre el que pasas el puntero.</p>
 <p>Asi en HTML</p>
-<p><b>&lta href="dirección de url"&gt&lt/a&gt</b>
+<p><strong class="verde">&lta href="dirección de url"&gt&lt/a&gt</strong>
                                     </p>
 <p>Asi en CSS</p>
 <table>
@@ -298,9 +299,9 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 &nbsp&nbsp&nbsp&nbsp color: red </br>
 }</strong>
         </td>
-        <td><b>a: link {</br> 
+        <td><strong class="verde">a: link {</br> 
 &nbsp&nbsp&nbsp&nbsp color: red </br>
-}</b>
+}</strong>
         </td>
     </tr>
 </table>
@@ -313,10 +314,10 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <h2> Primer hijo</h2>
 <p>Otro pseudo-selector útil es first-child. Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. Por ejemplo:</p>
 <p>En HTMl:</p>
-<p><b>&ltdiv&gt</br>
+<p><strong class="verde">&ltdiv&gt</br>
     &nbsp&nbsp&nbsp&nbsp &ltp&gt</b><strong style="color: red;"> Este es el unico que tiene en cuenta</strong><b>&lt/p&gt</br>
 &nbsp&nbsp&nbsp&nbsp &ltp&gt </b>Este queda igual<b> &lt/p&gt</br>
-&lt/div&gt </b></p>
+&lt/div&gt </strong></p>
 <p>Asi es en CSS</p>
 <table>
     <tr>
@@ -326,11 +327,11 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 &nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
 }</strong>
         </td>
-        <td><b>p: first-child {</br>
+        <td><strong class="verde">p: first-child {</br>
 &nbsp&nbsp&nbsp&nbsp color: red;</br>
 &nbsp&nbsp&nbsp&nbsp font-family: cursive;</br>
 &nbsp&nbsp&nbsp&nbsp text-decoration: none;</br>
-}</b>
+}</strong>
         </td>
     </tr>
 </table>
@@ -344,55 +345,55 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <p>Contamos con una serie de propiedades relacionadas a fuentes:</br>
 <table>
         <tr>
-            <td><b>font-family</b>
+            <td><strong class="verde">font-family</strong>
             </td>
             <td>Fuente de un elemento, algunas de las fuentes más comunes que puede acceder el navegador son: Arial, Arial Black, Arial Narrow, Courier New, Georgia, Impact, Tahoma, Times New Roman, Verdana, etc.</td>
         </tr>   
         <tr>
-            <td><b>font-size</b>
+            <td><strong class="verde">font-size</strong>
             </td>
             <td>Tamaño de la fuente se puede dar en px(pieles), %(porcentajes) y em(). </td>
         </tr>
         <tr>
-            <td><b>font-style</b> 
+            <td><strong class="verde">font-style</strong> 
             </td>
             <td>Estilo de fuente para un texto y algunos valores son: oblicue, italic, normal.</td>
         </tr>
         <tr>
-            <td><b>font-weight</b>
+            <td><strong class="verde">font-weight</strong>
             </td>
             <td>Establece el grosor o lo fino de los caracteres de un texto y algunos de sus vaores son: normal, bold(delgada), bolder(gruesa), lighter(), #(entre más grande el número, más gruesa es).</td>
         </tr>
         <tr>
-            <td><b>font-variant</b>
+            <td><strong class="verde">font-variant</strong>
             </td>
             <td>Puede cambiar el texto en mayúsculas , y puede asumir estos valores:small-caps(mayúsculas pero más pequeñas que las mayúsculas originales) o normal.</td>
         </tr>
         <tr>
-            <td><b>letter-spacing</b>
+            <td><strong class="verde">letter-spacing</strong>
             </td>
             <td>permiten indicar el espacio que debe haber entre los caracteres</td>
         </tr>
         <tr>
-            <td><b>word-spacing</b>
+            <td><strong class="verde">word-spacing</strong>
             </td>
             <td>permiten indicar el espacio que debe haber entre las palabras</td>
     </tr>
     <tr>
-            <td><b>text-indent</b>
+            <td><strong class="verde">text-indent</strong>
             </td>
             <td>indenta la primera linea de un texto. A partir de la segunda línea, el texto aparece sin indentación. Podemos indicar un valor negativo con lo que la indentación es hacia la izquierda.</td>
     </tr>
     <tr>
         <td><b>text-transform</b>
         </td>
-            <td>puede inicializarse con alguno de los siguientes valores: <b>none</b> (No provoca cambios en el texto), capitalize(Dispone en mayúsculas el primer caracter de cada palabra), lowercase(Convierte a minúsculas todas las letras del texto), uppercase(Dispone en mayúsculas el primer caracter de cada palabra.)</td>
+            <td>puede inicializarse con alguno de los siguientes valores: <strong class="verde">none</strong> (No provoca cambios en el texto), capitalize(Dispone en mayúsculas el primer caracter de cada palabra), lowercase(Convierte a minúsculas todas las letras del texto), uppercase(Dispone en mayúsculas el primer caracter de cada palabra.)</td>
     </tr>
 </table>
 <p>Se puede agrupar tres propiedades en el archivo de estilos:</br> 
- <b>p {</br>
-  &nbsp&nbsp&nbsp&nbsp font:bold italic 25px verdana;                                            </br>
-}</b></br>Es importante recordar que fon-weight va de primeras, font-size y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.</p>
+ <strong>p {</br>
+  &nbsp&nbsp&nbsp&nbsp font:bold italic 25px verdana;</br>
+}</strong></br>Es importante recordar que fon-weight va de primeras, font-size y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.</p>
                                         
 
 
@@ -408,9 +409,9 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
     &nbsp&nbsp&nbsp&nbsp font-family: valor 1, Valor 2, valor 3;  </br>
     }</strong>
         </td>
-        <td><b>p {</br>
+        <td><strong class="verde">p {</br>
     <p>&nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
-    }  </b>
+    }  </strong>
         </td>
     </tr>
 </table>
@@ -422,33 +423,33 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <!--Etiqueta div -->
 <a name="Etiqueta div"></a>
 <h2>4. Etiqueta div</h2>
-<p><b>&ltdiv&gt&lt/div&gt</b> nos permite dividir en bloques (es decir en piezas diferentes) a las cuales podemos definir el alto y el ancho y además podemos dar atributos especiales como el color, etc.</p>
+<p><strong class="verde">&ltdiv&gt&lt/div&gt</strong> nos permite dividir en bloques (es decir en piezas diferentes) a las cuales podemos definir el alto y el ancho y además podemos dar atributos especiales como el color, etc.</p>
 <p>Estos atributos tambien se utilizan para las tablas</p>
 <table>
     <tr>
-        <td><b>height</b>
+        <td><strong class="verde">height</strong>
         </td>
         <td>Para definir el alto</td>
     </tr>
     <tr>
-        <td><b>width</b>
+        <td><strong class="verde">width</strong>
         </td>
         <td>Para definir el ancho</td>
     </tr>
     <tr>
-        <td><b>background-color</b>
+        <td><strong class="verde">background-color</strong>
         </td>
         <td>Para definir el color del fondo</td>
     </tr>
     <tr>
-        <td><b>border</td><td>Para definir los bordes </td></tr>
+        <td><strong class="verde">border</strong></td><td>Para definir los bordes </td></tr>
     <tr>
-	    <td><b>border-radius</b>
+	    <td><strong class="verde">border-radius</strong>
         </td>
         <td>Para redondear un poco o mucho las esquinas del div</td>
     </tr>
     <tr>
-        <td><b>margin</b>
+        <td><strong class="verde">margin</strong>
         </td>
         <td>Establece la margen horizontal y vertical de un elemento respecto a los elementos circundantes</td>
     </tr>
