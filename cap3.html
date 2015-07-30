@@ -561,10 +561,20 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
 <!--pixeles y em -->
  <a name="Píxeles y Em"></a>                                                    
 <h2>Píxeles y Em</h2>
-<p>Cuando ajustamos el tamaño de la fuente, especificamos que la unidad que debemos usar es px (de "píxeles"), así:</br>
+<p>Cuando ajustamos el tamaño de la fuente, especificamos que la unidad que debemos usar es px (de "píxeles"), así:
+</p>
+<table>
+    <tr>
+    	<td>
+<strong> selector {</br>
+    &nbsp&nbsp&nbsp&nbsp propiedad: valor</br>
+}</strong></td>
+   	<td>	
 <strong class="verde">p {</br>
     &nbsp&nbsp&nbsp&nbsp font-size: 10px;</br>
-}</strong></br>
+}</strong></td>
+     </tr>
+</table>
 <p>Un píxel es un punto en la pantalla del computador. Cuando se habla de pixeles , se habla de tamaños especificos.</br>Para una pantalla Smartphone que el tamaño es completamente diferente se utilizan los <strong>em</strong>. Son diferente de las etiquetas <strong>&ltem&gt &lt/em&gt</strong> que usamos para dar énfasis.</br>La unidad de font-size em es una medida relativa. un em es igual al tamaño de fuente predeterminado en cualquier pantalla que el usuario esté usando. En Smartphones el tamaño se duplica o se divide de acuerdo al tamaño del Smartphone sencillamente se tiene en cuenta: 1em es el tamaño de fuente que se usa normalmente, así que 2em es el doble de grande, y 0.5em es la mitad de ese tamaño</p>
 <table>
     <tr>
@@ -759,11 +769,10 @@ También tienen una propiedad, <strong></strong>text-decoration</strong>, que pu
 <a name="Propiedad white-space"></a>
 <h2>Propiedad white-space</h2> 
 <p>Permite variar el comportamiento de los espacios en blanco. El estándar CSS 2.1 define cinco modelos diferentes de tratamiento de espacios en blanco:</p>
- <p><b>normal</b>: los espacios en blanco sobrantes y los saltos de línea se eliminan. No obstante, el texto se muestra en tantas líneas como sea necesario para que sus contenidos no se salgan del elemento contenedor.</p>
-<p><b>pre</b>: no se eliminan los espacios en blanco sobrantes y sólo se muestran los saltos de línea incluidos en el texto original. Este comportamiento puede provocar que los contenidos de texto se salgan de su elemento contenedor.</p>
-<p><b>nowrap</b>: se comporta igual que normal en los espacios en blanco, pero no añade saltos de línea en el texto original, por lo que los contenidos se pueden salir de su elemento contenedor. 
-<p><b>pre-wrap</b>: se comporta igual que pre, pero se introducen los saltos de línea que sean necesarios para que los contenidos de texto nunca se salgan de su elemento contenedor.</p>
-<p><b>pre-line</b>: se eliminan los espacios en blanco sobrantes, pero se respetan los saltos de línea originales y se crean tantos saltos de línea como sean necesarios para que el contenido de texto no se salga de su elemento contenedor.</p>
+ <p><strong="verde">normal</strong>: los espacios en blanco sobrantes y los saltos de línea se eliminan. No obstante, el texto se muestra en tantas líneas como sea necesario para que sus contenidos no se salgan del elemento contenedor.</p>
+<p><strong="verde">nowrap</strong>: se comporta igual que normal en los espacios en blanco, pero no añade saltos de línea en el texto original, por lo que los contenidos se pueden salir de su elemento contenedor. 
+<p><strong="verde">pre-wrap</strong>: se comporta igual que pre, pero se introducen los saltos de línea que sean necesarios para que los contenidos de texto nunca se salgan de su elemento contenedor.</p>
+<p><strong="verde">pre-line</strong>: se eliminan los espacios en blanco sobrantes, pero se respetan los saltos de línea originales y se crean tantos saltos de línea como sean necesarios para que el contenido de texto no se salga de su elemento contenedor.</p>
                                                                 
 
 
