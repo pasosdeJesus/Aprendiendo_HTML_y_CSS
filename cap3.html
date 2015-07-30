@@ -16,8 +16,8 @@
             <a href="#Selectores múltiples<">Selectores múltiples</a></br>
             <a href="#Selectores anidados">Selectores anidados</a></br>
             <a href="#Árbol genealógico">Árbol genealógico</a></br>
-            <a href="#Selectores Clase">Selectores Clase</a></br>
-            <a href="#Selectores Identificador">Selectores Identificador</a></br>
+            <a href="#Selectores Class">Selectores Clase</a></br>
+            <a href="#Selectores Id">Selectores Identificador</a></br>
             <a href="#Pseudo-Selectores">Pseudo-Selectores</a></br>
             <a href="#Enlaces">Enlaces</a></br>
             <a href="#Primer hijo">Primer hijo</a></br>
@@ -35,7 +35,7 @@
             <a href="#Propiedad Position">Propiedad Position</a></br>
             <a href="#Propiedad display">Propiedad display</a></br>
             <a href="#Valores negativos">Valores negativos</a></br>
-            <a href="#Propiedad Float">Propiedad Float<</a></br>
+            <a href="#Propiedad Float">Propiedad Float</a></br>
             <a href="#Propiedad clear">Propiedad clear</a></br>
             <a href="#Propiedad white-space">Propiedad white-space</a></br>
             <a href="#Bibliografía">Bibliografía</a></br>
@@ -156,10 +156,10 @@
 <!--selector múltiple -->
 <a name="Selectores múltiples<"></a>
 <h2>Selectores múltiples</h2>
-<p>Podemos agrupar varios selectores HTML con una misma regla de estilo. Esta característica nos permite ahorrar la escritura de reglas duplicadas para diferentes selectores HTML. Ejemplo, queremos la misma fuente para los selectores h1,h2 y h3 :</br>En HTML:</br>
-<b>&lth1&gtTítulo de nivel 1&lt/h1&gt</br>
-&lth2&gtTítulo de nivel 2&lt/h2&gt</br>
-    &lth3&gtTítulo de nivel 3&lt/h3&gt</b>
+<p>Podemos agrupar varios selectores HTML con una misma regla de estilo. Esta característica nos permite ahorrar la escritura de reglas duplicadas para diferentes selectores HTML. Ejemplo, queremos la misma fuente para los selectores h1, h2 y h3 :</br>En HTML:</br>
+<b>&lth1&gt<span>Título de nivel 1</span>&lt/h1&gt</br>
+&lth2&gt<span>Título de nivel 2</span>&lt/h2&gt</br>
+    &lth3&gt<span>Título de nivel 3</span>&lt/h3&gt</b>
                                 </br>
 En CSS y separados por coma (<strong class="verde">,</strong>) se da el mismo estilo a todos al mismo tiempo.</br>
 <table>
@@ -210,9 +210,9 @@ h3 {</br>
 
 
 
- <!--selectores clase -->
-    <a name="Selectores Clase"></a>
-<h2>Selectores Clase</h2>
+ <!--selectores class -->
+    <a name="Selectores Class"></a>
+<h2>Selectores Class</h2>
 <p>Sirven para aplicar el mismo estilo a varios selectores, simplemente puedes aplicar la misma  clase a todos esos elementos de HTML y luego definir el estilo para esa  clase en la pestaña de CSS.</br>
 Los selectores <strong>Class</strong> son asignadas a los elementos de HTML asi:</p>
 <p><strong class="verde">&ltdiv class="cuadrado"&gt&lt/div&gt</strong></br>
@@ -236,9 +236,9 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 
 
 <!--selector identificador -->
-<a name="Selectores Identificador"></a>                                    
-<h2>Selectores Identificador</h2>
-<p>Los identificadores son asignados a los elementos de HTML usando la letras <b>id</b> y un signo de igual(<b>=</b>):</p>
+<a name="Selectores Id"></a>                                    
+<h2>Selectores Id</h2>
+<p>Los identificadores son asignados a los elementos de HTML usando la letras <strong="verde">id</strong> y un signo de igual(<b>=</b>):</p>
 <p><strong class="verde">&ltdiv id="primero"&gt&lt/div&gt</strong>
                                     </p>
 <p>Los identificadores se reconocen en CSS con un signo de numeral (<strong class="verde">#</strong>):</p>
@@ -284,7 +284,7 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <!--enlaces -->
   <a name="Enlaces"></a>                                  
 <h2> Enlaces</h2>
-<p>Existe una cantidad de pseudo-selectores útiles para los enlaces, incluidos: puedes controlar la apariencia de enlaces que han sido y que no han sido visitados; e incluso de aquellos sobre los que el usuario pasa el puntero pero que aún no ha hecho click</p>
+<p>Existe una cantidad de pseudo-selectores útiles para los enlaces incluidos: puedes controlar la apariencia de enlaces que han sido y que no han sido visitados; e incluso de aquellos sobre los que el usuario pasa el puntero pero que aún no ha hecho click</p>
 <p><strong class="verde">a:link</strong>: Un enlace sin visitar.</b>
                                     </p>
 <p><strong class="verde">a:visited</strong>: Un enlace que ha sido visitado.</p>
@@ -312,7 +312,7 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <!--primer hijo -->
 <a name="Primer hijo"></a>                                    
 <h2> Primer hijo</h2>
-<p>Otro pseudo-selector útil es first-child. Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. Por ejemplo:</p>
+<p>Otro pseudo-selector útil es <strong>first-child</strong>. Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. Por ejemplo:</p>
 <p>En HTMl:</p>
 <p><strong class="verde">&ltdiv&gt</br>
     &nbsp&nbsp&nbsp&nbsp &ltp&gt</b><strong style="color: red;"> Este es el unico que tiene en cuenta</strong><b>&lt/p&gt</br>
@@ -385,7 +385,7 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
             <td>indenta la primera linea de un texto. A partir de la segunda línea, el texto aparece sin indentación. Podemos indicar un valor negativo con lo que la indentación es hacia la izquierda.</td>
     </tr>
     <tr>
-        <td><b>text-transform</b>
+        <td><strong class="verde">text-transform</strong>
         </td>
             <td>puede inicializarse con alguno de los siguientes valores: <strong class="verde">none</strong> (No provoca cambios en el texto), capitalize(Dispone en mayúsculas el primer caracter de cada palabra), lowercase(Convierte a minúsculas todas las letras del texto), uppercase(Dispone en mayúsculas el primer caracter de cada palabra.)</td>
     </tr>
@@ -410,7 +410,7 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
     }</strong>
         </td>
         <td><strong class="verde">p {</br>
-    <p>&nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
+    &nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
     }  </strong>
         </td>
     </tr>
@@ -454,25 +454,25 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
         <td>Establece la margen horizontal y vertical de un elemento respecto a los elementos circundantes</td>
     </tr>
     <tr>
-        <td><b>position</b>
+        <td><strong class="verde">position</strong>
         </td>
         <td>Indica como debe ubicarse en el bloque y sus valores pueden ser: static, relative, absolute, fixed, inherit</td>
     </tr>
     <tr>
-        <td><b>float</b>
+        <td><strong class="verde">float</strong>
         </td>
         <td>Es y sus valores pueden ser: left, right, none, inherit </td>
     </tr>
     <tr>
-        <td><b>padding</b>
+        <td><strong class="verde">padding</strong>
         </td>
         <td>Establece el espacio entre el elemento y su borde</td>
     </tr>
 </table>
-<p>También podemos unir varios atributos unidos con un guion (<b>-</b>), ejemplo: border-top-width, border-botton-width, border-left-width, border-right-width</p>
-<p>Asi se define: <b>&ltdiv style="width:100px; height:100px; background-color: #81F7D8; clear:right;"&gt&lt/div&gt</b> y se vera asi:
+<p>También podemos unir varios atributos unidos con un guion (<strong class="verde">-</strong>), ejemplo: <strong>border-top-width</p>
+<p>Asi se define: <strong class="verde">&ltdiv style="width:100px; height:100px; background-color: #81F7D8; clear:right;"&gt&lt/div&gt</strong> y se vera asi:
 <div style="width:100px; height:100px; background-color: #81F7D8; border: 2px solid red;"></div>
-<p>Estos segmentos también se pueden enlazar rodeandolos con las etiquetas <b>&lta&gt&lt/a&gt</b>
+<p>Estos segmentos también se pueden enlazar rodeandolos con las etiquetas <strong class="verde">&lta&gt&lt/a&gt</strong>
 
                                                     
                                                     
