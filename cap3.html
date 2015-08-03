@@ -118,11 +118,11 @@
 <p>La sintaxis de CSS es diferente a la de HTML. El formato general se ve así:</p>
 <table>
     <tr>
-        <td><strong>selector {</br>
+        <td><strong class="verde">selector {</br>
             &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         }</strong></b>
         </td>
-        <td><strong class="verde">p {</br>
+        <td><strong>p {</br>
             &nbsp&nbsp&nbsp&nbsp color: red;</br>
         }</strong>
         </td>
@@ -138,11 +138,11 @@
 <p>Este selector se puede usar para aplicar el estilo de CSS a cada elemento en la página. Por ejemplo:</p>
 <table>
     <tr>
-        <td><strong>* {</br>
+        <td><strong class="verde">* {</br>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         } </strong>
         </td>
-        <td><strong class="verde">* {</br>
+        <td><strong>* {</br>
 &nbsp&nbsp&nbsp&nbspborder: 2px solid black;</br>
         } </strong>
         </td>
@@ -157,19 +157,18 @@
 <a name="Selectores múltiples<"></a>
 <h2>Selectores múltiples</h2>
 <p>Podemos agrupar varios selectores HTML con una misma regla de estilo. Esta característica nos permite ahorrar la escritura de reglas duplicadas para diferentes selectores HTML. Ejemplo, queremos la misma fuente para los selectores h1, h2 y h3 :</br>En HTML:</br>
-<b>&lth1&gt<span>Título de nivel 1</span>&lt/h1&gt</br>
-&lth2&gt<span>Título de nivel 2</span>&lt/h2&gt</br>
-    &lth3&gt<span>Título de nivel 3</span>&lt/h3&gt</b>
-                                </br>
+<strong class="verde">&lth1&gt<strong><span>Título de nivel 1</span><strong class="verde">&lt/h1&gt</strong></br>
+<strong class="verde">&lth2&gt<span>Título de nivel 2</span><strong class="verde">&lt/h2&gt</strong></br>
+    <strong class="verde">&lth3&gt</strong><span>Título de nivel 3</span><strong class="verde">&lt/h3&gt</strong></br>
 En CSS y separados por coma (<strong class="verde">,</strong>) se da el mismo estilo a todos al mismo tiempo.</br>
 <table>
     <tr>
         <td>
-<strong>selector 1, selector 2, selector 3 {</br>
+<strong class="verde">selector 1, selector 2, selector 3 {</br>
      &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
     }</strong>
         </td>
-        <td> <strong class="verde">h1, h2, h3 {</br>
+        <td> <strong>h1, h2, h3 {</br>
   &nbsp&nbsp&nbsp&nbsp font-family:verdana;</br>
 }</strong></br>
         </td>
@@ -211,11 +210,11 @@ h3 {</br>
 Para enfocarse en las <b>&ltp&gt</b> que están dentro de los dos <b>&ltdiv&gt</b>, y no en todas las <b>&ltp&gt</b> se pueden seleccionar en la pestaña CSS de esta forma:
 <table>
     <tr>
-        <td><strong>selector1 selector2 selector3 {</br>
+        <td><strong class="verde">selector1 selector2 selector3 {</br>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }</strong>
         </td>
-        <td><strong class="verde">div div p {</br>
+        <td><strong>div div p {</br>
 &nbsp&nbsp&nbsp&nbsp color: #DF01D7;</br>
 }</strong>
         </td>
@@ -225,12 +224,12 @@ Para enfocarse en las <b>&ltp&gt</b> que están dentro de los dos <b>&ltdiv&gt</
 <table>
     <tr>
         <td>
-<strong>selector1 &gt selector2 {</br>
+<strong class="verde">selector1 &gt selector2 {</br>
     &nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
     }</b>
         </td>
         <td>
-<strong class="verde">div &gt p {</br>
+<strong>div &gt p {</br>
     &nbsp&nbsp&nbsp&nbsp color: #C93F3F;</br>
 }<//strong>
         </td>
@@ -259,12 +258,12 @@ Los selectores <strong>Class</strong> son asignadas a los elementos de HTML asi:
 En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <table>
     <tr>
-        <td><strong> punto(.) y nombre que dimos a class en HTML {</br>
+        <td><strong class="verde"> punto(.) y nombre que dimos a class en HTML {</br>
          &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
          &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
         }</strong>
         </td>
-        <td><strong class="verde">.cuadrado {</br>    &nbsp&nbsp&nbsp&nbspheight: 100px;</br>
+        <td><strong>.cuadrado {</br>    &nbsp&nbsp&nbsp&nbspheight: 100px;</br>
     &nbsp&nbsp&nbsp&nbspwidth: 100px;</br>
 }</strong> 
         </td>
@@ -284,11 +283,11 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <p>Los identificadores se reconocen en CSS con un signo de numeral (<strong class="verde">#</strong>):</p>
 <table>
     <tr>
-        <td><strong># nombre asignado al id en HTML {</br>
+        <td><strong class="verde"># nombre asignado al id en HTML {</br>
    &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }<strong>
         </td>
-        <td><strong class="verde">#primero {</br>
+        <td><strong>#primero {</br>
    &nbsp&nbsp&nbsp&nbsp height: 50px;</br>
 }</strong>
         </td>
@@ -306,11 +305,11 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <p>La sintaxis de CSS para los pseudo-selectores es:</p>
 <table>
     <tr>
-        <td><strong>elemento: pseudo-selector {</br>
+        <td><strong class="verde">elemento: pseudo-selector {</br>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }</strong>
         </td>
-        <td><strong class="verde">elemento: pseudo-selector {</br>
+        <td><strong>elemento: pseudo-selector {</br>
 &nbsp&nbsp&nbsp&nbsp propiedad: valor;</br>
 }</strong>
         </td>
@@ -335,8 +334,8 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <p>Asi en CSS</p>
 <table>
     <tr>
-        <td><strong>a: link {</br> 
-&nbsp&nbsp&nbsp&nbsp color: red </br>
+        <td><strong class="verde">a: link {</br> 
+&nbsp&nbsp&nbsp&nbsp propiedad: valor </br>
 }</strong>
         </td>
         <td><strong class="verde">a: link {</br> 
@@ -352,22 +351,25 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <!--primer hijo -->
 <a name="Primer hijo"></a>                                    
 <h2> Primer hijo</h2>
-<p>Otro pseudo-selector útil es <strong>first-child</strong>. Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. Por ejemplo:</p>
+<p>Otro pseudo-selector útil es <strong class="verde">first-child</strong>. 
+Se usa para aplicar el estilo únicamente a los elementos que son los primeros hijos de un elemento. 
+Por ejemplo:</p>
 <p>En HTMl:</p>
 <p><strong class="verde">&ltdiv&gt</br>
-    &nbsp&nbsp&nbsp&nbsp &ltp&gt</b><strong style="color: red;"> Este es el unico que tiene en cuenta</strong><b>&lt/p&gt</br>
-&nbsp&nbsp&nbsp&nbsp &ltp&gt </b>Este queda igual<b> &lt/p&gt</br>
+    &nbsp&nbsp&nbsp&nbsp &ltp&gt</strong><strong style="color: red;"> Este es el unico que 
+    tiene en cuenta</strong><strong class="verde">&lt/p&gt</br>
+&nbsp&nbsp&nbsp&nbsp &ltp&gt </strong>Este queda igual<strong> &lt/p&gt</br>
 &lt/div&gt </strong></p>
 <p>Asi es en CSS</p>
 <table>
     <tr>
-        <td><strong>selector: first-child {</br>
+        <td><strong class="verde">selector: first-child {</br>
 &nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
 &nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
 &nbsp&nbsp&nbsp&nbsp valor: propiedad;</br>
 }</strong>
         </td>
-        <td><strong class="verde">p: first-child {</br>
+        <td><strong>p: first-child {</br>
 &nbsp&nbsp&nbsp&nbsp color: red;</br>
 &nbsp&nbsp&nbsp&nbsp font-family: cursive;</br>
 &nbsp&nbsp&nbsp&nbsp text-decoration: none;</br>
@@ -445,11 +447,11 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 <p>Por ejemplo, si se escribe:</p>
 <table>
     <tr>
-        <td><strong>p {</br>
+        <td><strong class="verde">p {</br>
     &nbsp&nbsp&nbsp&nbsp font-family: valor 1, Valor 2, valor 3;  </br>
     }</strong>
         </td>
-        <td><strong class="verde">p {</br>
+        <td><strong>p {</br>
     &nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
     }  </strong>
         </td>
@@ -569,10 +571,6 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
         </td>
         <td>Establece el espacio entre un elemento y su contenidoo</td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
 </table>
                                                     
                                                         
@@ -606,11 +604,11 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
 <table>
     <tr>
     	<td>
-<strong> selector {</br>
+<strong class="verde"> selector {</br>
     &nbsp&nbsp&nbsp&nbsp propiedad: valor</br>
 }</strong></td>
    	<td>	
-<strong class="verde">p {</br>
+<strong>p {</br>
     &nbsp&nbsp&nbsp&nbsp font-size: 10px;</br>
 }</strong></td>
      </tr>
@@ -618,11 +616,11 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
 <p>Un píxel es un punto en la pantalla del computador. Cuando se habla de pixeles , se habla de tamaños especificos.</br>Para una pantalla Smartphone que el tamaño es completamente diferente se utilizan los <strong>em</strong>. Son diferente de las etiquetas <strong>&ltem&gt &lt/em&gt</strong> que usamos para dar énfasis.</br>La unidad de font-size em es una medida relativa. un em es igual al tamaño de fuente predeterminado en cualquier pantalla que el usuario esté usando. En Smartphones el tamaño se duplica o se divide de acuerdo al tamaño del Smartphone sencillamente se tiene en cuenta: 1em es el tamaño de fuente que se usa normalmente, así que 2em es el doble de grande, y 0.5em es la mitad de ese tamaño</p>
 <table>
     <tr>
-        <td><strong>selector {</br>
+        <td><strong class="verde">selector {</br>
     &nbsp&nbsp&nbsp&nbsp  font-size: valor;</br>
         }</strong>
         </td>
-        <td><strong class="verde">p {</br>
+        <td><strong>p {</br>
             &nbsp&nbsp&nbsp&nbsp font-size: 1em;</br>
         }</strong></td>
     </tr>
@@ -692,17 +690,18 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
 <p>Por ejemplo, para hacer un borde de 2 píxeles de ancho, sólido, y de color rojo, es asi:</p>
 <table>
     <tr>
-        <td><strong>selector {</br>
+        <td><strong class="verde">selector {</br>
 &nbsp&nbsp&nbsp&nbsp border: valor valor valor;</br>
 }</strong>
         </td>
-        <td><strong class="verde">selector {</br>
+        <td><strong>selector {</br>
 &nbsp&nbsp&nbsp&nbsp border: 2px solid red;</br>
     }</strong>
         </td>
     </tr>
 </table>
-<p>También podemos colocar 2 valores para los cuatro lados, el primer valor es para top y botton y el segundo para right y left,</p>
+<p>También podemos colocar 2 valores para los cuatro lados, el primer valor es para top y botton y 
+el segundo para right y left,</p>
                                                 
                                                 
 
@@ -713,8 +712,11 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
 <h2>Propiedad Margin</h2>
 <p>Margin(margen) Se refiere al espacio que hay entre nuestro elemento y los elementos que lo rodean</br>
 Algunos de los valores son:</br>
-<strong class="verde">Auto</strong>: Esto le indica al documento que automáticamente coloque un margen igual a la izquierda y a la derecha de nuestro elemento, centrándolo en la página.</br>También puedes establecer a la vez todos los márgenes de un elemento: simplemente comienzas con el margen superior y avanzas en el sentido de las manecillas del reloj (del superior al derecho, al inferior, y al izquierdo). Se define en px, em, %, pt(pulgadas), auto. Ejemplo:</br>
-<strong class="verde">margin: 1px 2px 3px 4px;</strong>                                         </br>
+<strong class="verde">Auto</strong>: Esto le indica al documento que automáticamente 
+coloque un margen igual a la izquierda y a la derecha de nuestro elemento, centrándolo en la página.</br>
+También puedes establecer a la vez todos los márgenes de un elemento: simplemente comienzas con el margen 
+superior y avanzas en el sentido de las manecillas del reloj (del superior al derecho, al inferior, y al izquierdo). Se define en px, em, %, pt(pulgadas), auto. Ejemplo:</br>
+<strong class="verde">margin: 1px 2px 3px 4px;</strong></br>
 También podemos determinar un lado específico</br> <strong class="verde">margin-top, right, botton, left</strong><p>
 
 
@@ -785,11 +787,11 @@ También tienen una propiedad, <strong></strong>text-decoration</strong>, que pu
 <p>Sus valores son: right, left, both</br>En Css:</p>
 <table>
     <tr>
-        <td><strong>selector {</br>
+        <td><strong class="verde">selector {</br>
             float: valor</br>
     }</strong>
         </td>
-        <td><strong class="verde">div {</br>
+        <td><strong>div {</br>
             float: right;</br>
     }</strong>
         </td>
@@ -806,11 +808,11 @@ También tienen una propiedad, <strong></strong>text-decoration</strong>, que pu
 <p>Se usa clear para que un elememto flotante se separe de los otros elememtos qu esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior. como right, left, o both</br>La sintaxis es :</p>
 <table>
     <tr>
-        <td><strong>elemento {</br>
+        <td><strong class="verde">elemento {</br>
 <p>&nbsp&nbsp&nbsp&nbsp clear: valor</br>
         }</strong>
         </td>
-        <td><strong class="verde">div {</br>
+        <td><strong>div {</br>
 <p>&nbsp&nbsp&nbsp&nbsp clear: left</br>
         }</strong>
         </td>
