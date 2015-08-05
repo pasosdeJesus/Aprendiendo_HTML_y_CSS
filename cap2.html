@@ -84,7 +84,7 @@
       
 <!--lstas definidas -->
     <a name="listas definidas"></a>
-	<h2>1.3 Listas definidas</h2>
+	<h2>1.2 Listas definidas</h2>
 <blockquote>
 <p>Se utiliza para hacer listas de términos con sus respectivas definiciónes</br>
 <strong class="verde">&ltdl&gt</strong> viene de definition list</br>
@@ -121,9 +121,12 @@
             <a name="Tablas"></a>
 	<h2>2. Tablas</h2>
 <blockquote>
-	<p>Una tabla es un grupo de información ordenada en filas y columnas. La primera etiqueta que usaremos es:</p>
+	<p>Una tabla es un grupo de información ordenada en filas y columnas. La primera etiqueta 
+	que usaremos es:</p>
 <p><strong class="verde">&lttable&gt&lt/table&gt</strong> para crear tablas</P>
-<p>Para colocar un título fuera de la tabla, pero relacionada con ella se utiliza <strong class="verde">&ltcaption&gt&lt/caption&gt</strong> después de la etiqueta <strong class="verde">&lttable&gt</strong></p>
+<p>Para colocar un título fuera de la tabla, pero relacionada con ella se utiliza <strong 
+class="verde">&ltcaption&gt&lt/caption&gt</strong> después de la etiqueta <strong class="verde">&lttable&gt
+</strong></p>
 <p>Una tabla se divide en  encabezado y cuerpo.</p>
 </blockquote>
 
@@ -136,11 +139,16 @@
 	 <p>El encabezado nos ayuda a darle estilo a nuestra tabla, es donde van los títulos.</p>
 <table>
     <tr>
-        <td><strong class="verde">&ltthead&gt&lt/thead&gt</strong></td><td> Es el encabezado de tabla (del inglés table head). Contiene los títulos de la tabla.</td></tr>
+        <td><strong class="verde">&ltthead&gt&lt/thead&gt</strong></td><td> Es el encabezado de tabla 
+        (del inglés table head). Contiene los títulos de la tabla.</td></tr>
     <tr>
-	<td><strong class="verde">&ltth&gt&lt/th&gt</strong></td><td> Son las celdas en el encabezado de una tabla y en cada una de las celdas puede ir un titulo</td></tr>
+	<td><strong class="verde">&ltth&gt&lt/th&gt</strong></td><td> Son las celdas en el encabezado de
+	una tabla y en cada una de las celdas puede ir un titulo</td></tr>
 </table>
-         <strong class="verde">colspan</strong> Es un atributo que se utiliza con la etiqueta <strong class="verde">&ltth&gt</strong class="verde"> y <strong class="verde">&lttd&gt</strong> para que un título en la parte superior de la tabla que por defecto ocupa 1 columna, cubra la cantidad de columnas que necesitemos en la tabla. Debemos decirle cuantas columnas debe ocupar.
+         <strong class="verde">colspan</strong> Es un atributo que se utiliza con la etiqueta <strong 
+         class="verde">&ltth&gt</strong class="verde"> y <strong class="verde">&lttd&gt</strong> para que un 
+         título en la parte superior de la tabla que por defecto ocupa 1 columna, cubra la cantidad de columnas 
+         que necesitemos en la tabla. Debemos decirle cuantas columnas debe ocupar.
 Ejemplo:</p>
          <p><strong class="verde">&ltth colspan="3"&gt&lt/th&gt</strong> Ocupara el espacio de tres columnas</p>
 <p><strong class="verde">&ltth rowspan="3"&gt&lt/th&gt</strong> Ocupara el espacio de tres filas</p>
@@ -151,14 +159,15 @@ Ejemplo:</p>
        <!--cuerpo de la tabla -->
             <a name="Cuerpo de la tabla"></a>
 	<h2>2.2. Cuerpo de la tabla</h2>
-</blockquote>
+<blockquote>
 <table>
 	<tr>
         <td><strong class="verde">&lttbody&gt&lt/tbody&gt</strong></td><td> Cuerpo de tabla (del inglés table body). Contiene los datos tabulares de la tabla.</td></tr>
      <tr>
          <td><strong class="verde">&lttr&gt&lt/tr&gt</strong> </td><td>Para crear una fila de la tabla</td></tr>
      <tr>	
-	<td><strong class="verde">&lttd&gt&lt/td&gt</strong></td><td>Es una celda con uno de los datos de la tabla.</td></tr></table>
+	<td><strong class="verde">&lttd&gt&lt/td&gt</strong></td><td>Es una celda con uno de los datos de la 
+	tabla.</td></tr></table>
 <p>Para crear columnas en cada fila se incluye una celda por  cada columna.</p>
 	</p>
     <p>Un ejemplo de una tabla con dos imagenes, y dos textos, una  imagen y un texto con enlace:</p
@@ -178,7 +187,8 @@ Ejemplo:</p>
                        <td><strong class="verde">
                            &lttable&gt</br>
                        &nbsp;&nbsp; &nbsp;&nbsp; &lthead&gt</br>
-                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &ltth colspan="2"&gtAsi se ve en la página&lt/th&gt</br> 
+                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &ltth colspan="2"&gtAsi se ve en la 
+                  página&lt/th&gt</br> 
               &nbsp;&nbsp; &nbsp;&nbsp; &lt/thead&gt</br>
           &nbsp;&nbsp; &nbsp;&nbsp; &lttbody&gt</br>
        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lttr&gt</br>
@@ -186,8 +196,10 @@ Ejemplo:</p>
     &lttd&gt&ltp&gtPaisajes&lt/p&gt&lt/td&gt</br>
    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt/tr&gt</br>
    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lttr&gt</br>
-                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lttd&gt&ltimg src="http://xurl.es/qwa17"&gt&lt/img&gt&lt/td&gt
-                   &lttd&gt&lta href="http://www.codecademy.com/?locale_code=es"&gt&ltp&gtAprende HTML&lt/p&gt&lt/a&gt&lt/td&gt
+                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                  &lttd&gt&ltimg src="http://xurl.es/qwa17"&gt&lt/img&gt&lt/td&gt
+                   &lttd&gt&lta href="http://www.codecademy.com/?locale_code=es"&gt&ltp&gtAprende HTML&lt/p&gt
+                   &lt/a&gt&lt/td&gt
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt/tr</br>
 &nbsp;&nbsp; &nbsp;&nbsp; &lt/tbody&gt</br>    
 &lt/table&gt</strong> 
@@ -195,7 +207,8 @@ Ejemplo:</p>
        <td>
            <table>
                <tr>
-                   <td><a href="http://www.codecademy.com/?locale_code=es"><img src=" http://xurl.es/1q5qj"></img</a>
+                   <td><a href="http://www.codecademy.com/?locale_code=es"><img src=" http://xurl.es/1q5qj">
+                   </img</a>
                    </td>
                    <td><p>Paisajes</p></td></tr>
                <tr>
@@ -220,30 +233,43 @@ Ejemplo:</p>
 
 <table>
     <tr>
-     <td></td><td></td><td></td><td></td><td style="color:#FF0000;">Valor del atributo Style</td><td></td><td></td><td></td><td></td>
+     <td></td><td></td><td></td><td></td><td style="color:#FF0000;">Valor del atributo Style</td><td></td><td>
+     	
+     </td><td></td><td></td>
     </tr>
     <tr>    
      <td></td><td></td><td></td><td></td><td style="color:#FF0000">&darr;</td><td></td><td></td><td></td><td></td>  
     </tr> 
     <tr>    
-        <td style="color: darkgreen;">&lt</td><td style="color: #FF0000;">table</td><td style="color: #0A2A1B;"> style</td><td>=</td><td style="color:#FF0000">"border:</td><td style="color:#58FA58" >1px solid  blue;"</td><td style="color: darkgreen;">&gt</td>
+        <td style="color: darkgreen;">&lt</td><td style="color: #FF0000;">table</td><td style="color: #0A2A1B;"> 
+        style</td><td>=</td><td style="color:#FF0000">"border:</td><td style="color:#58FA58" >1px solid  blue;"</td>
+        <td style="color: darkgreen;">&gt</td>
      </tr>
      <tr>
         <td></td><td style="color: #FF0000;">&uarr;</td>
-         <td style="color: #0A2A1B;">&uarr;</td><td></td><td style="color: #FF0000;">&uarr;</td><td style="color:#58FA58">&uarr;</td><td></td><td></td><td></td>
+         <td style="color: #0A2A1B;">&uarr;</td><td></td><td style="color: #FF0000;">&uarr;</td><td style="color:
+         #58FA58">&uarr;</td><td></td><td></td><td></td>
      </tr>
       <tr>
-          <td></td><td style="color: #FF0000;">etiqueta</td><td style="color: #0A2A1B;">atributo</td><td></td><td style="color: #FF0000;">propiedad css</td><td style="color:#58FA58">valor de la propiedad border</td><td></td><td></td><td></td>
+          <td></td><td style="color: #FF0000;">etiqueta</td><td style="color: #0A2A1B;">atributo</td><td></td><td 
+          style="color: #FF0000;">propiedad css</td><td style="color:#58FA58">valor de la propiedad border</td><td>
+          	
+          </td><td></td><td></td>
      </tr>
 </table>    
-<p>Los bordes se pueden definir uno por uno o los cuatro a la vez; cuando definimos uno a uno se empieza por el borde superior, luego el borde derecho, despues el borde inferior y por ultimo el borde izquierdo separados por un espacio entre si. </p>
+<p>Los bordes se pueden definir uno por uno o los cuatro a la vez; cuando definimos uno a uno se empieza por el 
+borde superior, luego el borde derecho, despues el borde inferior y por ultimo el borde izquierdo separados por 
+un espacio entre si. </p>
 <table>
     <tr>
-        <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">derecha</td><td></td><td style="color: #FF0066;">izquierda</td></tr>  
+        <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">derecha</td><td></td>
+        <td style="color: #FF0066;">izquierda</td></tr>  
     <tr> 
-        <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">&darr;</td><td></td><td style="color: #FF0066;">&darr;</td></tr>  
+        <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">&darr;</td><td></td>
+        <td style="color: #FF0066;">&darr;</td></tr>  
      <tr> 
-         <b><td>&lt</td><td> table</td><td> style</td><td>=</td><td> "border: </td><td style"color: #006600;"> 3px</td><td style="color: #FF0000;" > 4px</td><td style="color: #CC0000;"> 3px</td><td style="color: #FF0066;"> 5px;</td><td>"&gt</td></b>
+         <b><td>&lt</td><td> table</td><td> style</td><td>=</td><td> "border: </td><td style"color: #006600;"> 3px
+         </td><td style="color: #FF0000;" > 4px</td><td style="color: #CC0000;"> 3px</td><td style="color: #FF0066;"> 5px;</td><td>"&gt</td></b>
     </tr>
      <tr>
         <td></td><td></td><td></td><td></td><td></td>
@@ -254,7 +280,8 @@ Ejemplo:</p>
 <p>Algunos de los valores de border son:</p>
 <table>
     <tr>
-	<td><strong class="verde">#px</strong></td><td> Grosor de la línea (específica el número de pixeles)</td></tr>
+	<td><strong class="verde">#px</strong></td><td> Grosor de la línea (específica el número de pixeles)</td>
+	</tr>
     <tr> 	
 	<td><strong class="verde">solid</strong></td><td> Línea continua</td></tr>
     <tr>
@@ -262,7 +289,8 @@ Ejemplo:</p>
     <tr>
 	<td><strong class="verde">separate</strong></td><td> Independiente</td></tr>
     <tr>
-	<td><strong class="verde">collapsable</strong></td><td> Une los bordes de las celdas adyacentes</td></tr>
+	<td><strong class="verde">collapsable</strong></td><td> Une los bordes de las celdas adyacentes</td>
+	</tr>
    <tr> 
 	<td><strong class="verde">color</strong></td><td> Color </td></tr>
    <tr>
@@ -289,17 +317,22 @@ Ejemplo:</p>
 <p>Las etiquetas de autocerrado son las etiquetas que no admiten contenido. Algunas de ellas son:</p>
 <table>
     <tr>
-	<td><strong class="verde">&ltbr /&gt</strong></td><td>Se utiliza para crear un salto de línea.  Pasa al otro renglon</td></tr>
+	<td><strong class="verde">&ltbr /&gt</strong></td><td>Se utiliza para crear un salto de línea.  Pasa al 
+	otro renglon</td></tr>
     <tr>
-	<td><strong class="verde">&ltmeta /&gt</strong></td><td>Indica el tipo de codificacion que estamos utilizando</td></tr>
+	<td><strong class="verde">&ltmeta /&gt</strong></td><td>Indica el tipo de codificacion que estamos 
+	utilizando</td></tr>
     <tr>
 	<td><strong class="verde">&ltimg /&gt</strong></td><td>Se utiliza para insertar una imagen</tr>
     <tr>
-	<td><strong class="verde">&ltlink /&gt</strong></td><td>Se utiliza para enlazar un archivo HTML con otros archivos </td></tr>
+	<td><strong class="verde">&ltlink /&gt</strong></td><td>Se utiliza para enlazar un archivo HTML con otros 
+	archivos </td></tr>
     <tr>
-	<td><strong class="verde">&lthr /&gt</strong></td><td>Representa una línea horizontal para separar diferentes secciones de un documento</td></tr>
+	<td><strong class="verde">&lthr /&gt</strong></td><td>Representa una línea horizontal para separar 
+	diferentes secciones de un documento</td></tr>
     <tr>
-	<td><strong class="verde">&ltinput /&gt</strong></td><td>Se utiliza para el ingreso de datos del usuario./td></tr>
+	<td><strong class="verde">&ltinput /&gt</strong></td><td>Se utiliza para el ingreso de datos del usuario.
+	</td></tr>
     </td><tr>
 </table>
 </blockquote>
