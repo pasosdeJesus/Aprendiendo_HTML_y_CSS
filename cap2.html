@@ -230,6 +230,7 @@ Ejemplo:</p>
 	Para demarcar los bordes de la tabla en HTML se pone como valor del atributo style seguido de 
 	igual(<strong class="verde">=</strong>) a uno o varios valores entre las comillas 
 	(<strong class="verde">" "</strong>) separados por espacios</p>
+	<p>El border se da en pixeles(#px)</p>
 
 <table>
     <tr>
@@ -258,8 +259,8 @@ Ejemplo:</p>
      </tr>
 </table>    
 <p>Los bordes se pueden definir uno por uno o los cuatro a la vez; cuando definimos uno a uno se empieza por el 
-borde superior, luego el borde derecho, despues el borde inferior y por ultimo el borde izquierdo separados por 
-un espacio entre si. </p>
+borde superior(top), luego el borde derecho(right), despues el borde inferior(botton) y por ultimo el borde 
+izquierdo(left) separados por un espacio entre si. </p>
 <table>
     <tr>
         <td></td><td></td><td></td><td></td><td></td><td></td><td style="color: #FF0000;">derecha</td><td></td>
@@ -277,15 +278,9 @@ un espacio entre si. </p>
     <tr> 
         <td></td><td></td><td></td><td></td><td></td><td>superior</td><td></td><td style="color: #CC0000;">inferior</td><td></td></tr>
 </table>
-<p>Algunos de los valores de border son:</p>
+<p> Css
+	Algunos de los valores de border son:</p>
 <table>
-    <tr>
-	<td><strong class="verde">#px</strong></td><td> Grosor de la línea (específica el número de pixeles)</td>
-	</tr>
-    <tr> 	
-	<td><strong class="verde">solid</strong></td><td> Línea continua</td></tr>
-    <tr>
-	<td><strong class="verde">dashed</strong></td><td> Línea discontinua</td></tr>
     <tr>
 	<td><strong class="verde">separate</strong></td><td> Independiente</td></tr>
     <tr>
@@ -294,28 +289,12 @@ un espacio entre si. </p>
    <tr> 
 	<td><strong class="verde">color</strong></td><td> Color </td></tr>
    <tr>
-	<td><strong class="verde">top</strong></td><td> Superior</td></tr>
-    <tr>
-	<td><strong class="verde">botton</strong></td><td> Inferior</td></tr>
-    <tr>
-	<td><strong class="verde">left</strongb></td><td> Izquierdo</td></tr>
-    <tr>
-	<td><strong class="verde">righ</strong></td><td> Derecho</td></tr>
-    <tr>
-	    </table>
-<!--border -->
-<a name="Propiedad Border"></a>
-<h2>Propiedad Border</h2>
-<p>Border es la línea de borde del elemento.<br>
- Border admite varios valores:</br>
-<table>
-    <tr>
-        <td><strong class="verde">none</strong>:</td>
+	<td><strong class="verde">none</strong>:</td>
         <td>No se muestra ningún borde.</td>
     </tr>
     <tr>
-    <td><strong class="verde">hidden</strong>:</td>
-    <td>Visualmente es igual a none, pero para el navegador es diferente a la hora de asociarlos con los bordes adyacentes.</td>
+        <td><strong class="verde">hidden</strong>:</td>
+        <td>Visualmente es igual a none, pero para el navegador es diferente a la hora de asociarlos con los bordes adyacentes.</td>
     </tr>
     <tr>
         <td><strong class="verde">dotted</strong>:</td>
