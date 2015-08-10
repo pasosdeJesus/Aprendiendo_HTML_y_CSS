@@ -303,34 +303,81 @@ un espacio entre si. </p>
 	<td><strong class="verde">righ</strong></td><td> Derecho</td></tr>
     <tr>
 	    </table>
+<!--border -->
+<a name="Propiedad Border"></a>
+<h2>Propiedad Border</h2>
+<p>Border es la línea de borde del elemento.<br>
+ Border admite varios valores:</br>
+<table>
+    <tr>
+        <td><strong class="verde">none</strong>:</td>
+        <td>No se muestra ningún borde.</td>
+    </tr>
+    <tr>
+    <td><strong class="verde">hidden</strong>:</td>
+    <td>Visualmente es igual a none, pero para el navegador es diferente a la hora de asociarlos con los bordes adyacentes.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">dotted</strong>:</td>
+        <td>Borde punteado, es un borde formado por una serie de puntos separados por espacios.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">dashed</strong>:</td>
+        <td>Borde discontinuo, formado por una serie de pequeñas líneas separadas por espacios.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">solid</strong>:</td>
+        <td>Borde continuo, formado por una línea continua.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">double</strong>:</td>
+        <td>Borde doble, formado por dos líneas cotinuas.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">groove</strong>:</td>
+        <td>Borde hundido, que visualmente parece que está por debajo del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">ridge</strong>:</td>
+        <td>Borde saliente, que visualmente parece que está por encima del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">inset</b</strong>:</td>
+        <td>Borde hundido, que provoca que el elmento que encierra parezca que está por debajo del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">outset</strong>:</td>
+        <td>Borde saliente, que provoca que el elemento que encierra parezca que está por encima del nivel de la superficie de la pantalla.</td>
+    </tr>
+    <tr>    
+        <td><strong class="verde">inherit</strong>:</td>
+        <td>Que hereda del elemento padre</td>
+    </tr>
+    <tr>
+        <td><strong class="verde">collapse</strong>
+        </td>
+    </tr>
+    <tr>
+        <td><strong class="verde"> border-radius</strong>:</td>
+        <td>Esta propiedad modifica las esquinas de los objetos de HTML, si colocamos al 100% quedara redondo.</td>
+    </tr>
+</table>
+<p>Por ejemplo, para hacer un borde de 2 píxeles de ancho, sólido, y de color rojo, es asi:</p>
+<table>
+    <tr>
+        <td><strong class="verde">selector {</br>
+&nbsp&nbsp&nbsp&nbsp border: valor valor valor;</br>
+}</strong>
+        </td>
+        <td><strong>selector {</br>
+&nbsp&nbsp&nbsp&nbsp border: 2px solid red;</br>
+    }</strong>
+        </td>
+    </tr>
+</table>
+<p>También podemos colocar 2 valores para los cuatro lados, el primer valor es para top y botton y 
+el segundo para right y left,</p>
 
-<p>El atributo border también se puede especiicar más para hablar de un sólo borde. Ejemplo.</p>
-<p><b>border-righ-color</b> que hablamos del color del borde derecho.</p>
-Propiedad Border
-
-Border es la línea de borde del elemento.
-Border admite varios valores:
-none:	No se muestra ningún borde.
-hidden:	Visualmente es igual a none, pero para el navegador es diferente a la hora de asociarlos con los bordes adyacentes.
-dotted:	Borde punteado, es un borde formado por una serie de puntos separados por espacios.
-dashed:	Borde discontinuo, formado por una serie de pequeñas líneas separadas por espacios.
-solid:	Borde continuo, formado por una línea continua.
-double:	Borde doble, formado por dos líneas cotinuas.
-groove:	Borde hundido, que visualmente parece que está por debajo del nivel de la superficie de la pantalla.
-ridge:	Borde saliente, que visualmente parece que está por encima del nivel de la superficie de la pantalla.
-inset:	Borde hundido, que provoca que el elmento que encierra parezca que está por debajo del nivel de la superficie de la pantalla.
-outset:	Borde saliente, que provoca que el elemento que encierra parezca que está por encima del nivel de la superficie de la pantalla.
-inherit:	Que hereda del elemento padre
-collapse
-border-radius:	Esta propiedad modifica las esquinas de los objetos de HTML, si colocamos al 100% quedara redondo.
-Por ejemplo, para hacer un borde de 2 píxeles de ancho, sólido, y de color rojo, es asi:
-
-selector {
-     border: valor valor valor;
-}	selector {
-     border: 2px solid red;
-}
-También podemos colocar 2 valores para los cuatro lados, el primer valor es para top y botton y el segundo para right y left,
 </blockquote>
     
     
