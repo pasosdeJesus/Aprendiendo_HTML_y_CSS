@@ -33,10 +33,10 @@
             <a href="#Propiedad Text-decoration">Propiedad Text-decoration</a></br>
             <a href="#Propiedad Position">Propiedad Position</a></br>
             <a href="#Propiedad display">Propiedad display</a></br>
-            <a href="#Valores negativos">Valores negativos</a></br>
             <a href="#Propiedad Float">Propiedad Float</a></br>
             <a href="#Propiedad clear">Propiedad clear</a></br>
             <a href="#Propiedad white-space">Propiedad white-space</a></br>
+            <a href="#Valores negativos">Valores negativos</a></br>
             <a href="#Bibliografía">Bibliografía</a></br>
             <a href="#"></a></br>
             <a name=""></a>
@@ -730,6 +730,40 @@ de forma alternativa
  <!--position -->
 <a name="Propiedad Position"></a></br>                                                        
 <h2>Propiedad Position</h2>
+<p>El posicionamiento controla la posición de los elementos de HTML, los elementos están ubicados dentro de la página en lo que se conoce como modelo de caja de CSS. Cada elemento de HTML es como una pequeña caja que lo encierra.</br>
+Cada elemento de HTML tiene su propia caja para habitar. La caja más externa de cada elemento ocupa el ancho de toda la página.</br>
+La propiedad position determina el punto de referencia donde se debe localizar cada elemento HTML.</p>
+<table>
+    <tr>
+        <td><strong class="verde">státic</strong></td><td> Si no se especifica será static.</td></tr>
+    <tr>
+        <td><strong class="verde">absolute</strong></td>
+        <td> se posiciona en relación con el primer elemento padre que tiene y que no esté establecido con position static. Si no existe tal elemento, el elemento se posiciona en relación a html.
+         </td>
+    </tr>
+    <tr>
+        <td><strong class="verde">relative</strong></td>         <td> le indica al elemento que se desplace respecto al lugar donde se encontraría si tuviera el posicionamiento predeterminado static
+        </td>
+    </tr>
+    <tr>
+        <td><strong class="verde">fixed</strong></td>
+        <td> ancla un elemento a la ventana del navegador.</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><strong class="verde">
+            selector {</br>
+            propiedad: valor;</strong>
+        </td>
+        <td><strong>
+            div {</br>
+            position: relative;
+            </strong>
+        </td>
+    </tr>
+</table>
 
 
 
@@ -738,6 +772,21 @@ de forma alternativa
 <!--display -->
 <a name="Propiedad display"></a>
 <h2>Propiedad display</h2>
+<p>Definición</br>
+Algunos valores posibles:</p>
+<table>
+    <tr>
+        <td><strong class="verde">block</strong></td> <td>Esto vuelve al elemento una caja de bloque. 
+        No permitirá que nada sea ubicado junto a él en la página. Ocupa el ancho completo.</td></tr>
+<td><strong class="verde">inline-block</strong></td><td> Esto vuelve a un elemento una caja de bloque, 
+pero permitirá que otros elementos sean ubicados junto a él en la misma línea.</td></tr>
+<td><strong class="verde">inline</strong></td><td> Esto hace que un elemento sea ubicado en la misma línea que 
+otro elemento, pero sin darle formato como bloque. Solamente ocupa el ancho más pequeño posible que requiera 
+(pero no la línea completa).</td></tr>
+<td><strong class="verde">none</strong></td><td> Elimina completamente el elemento seleccionado de la página, 
+incluyendo cualquier hijo o contenido que tenga. Pero no se pierde la información.</td>
+    </tr>
+</table>
 
                                                                 
                                                                             
@@ -745,8 +794,8 @@ de forma alternativa
     <!--float -->
     <a name="Propiedad Float"></a>                                                       
 <h2>Propiedad Float</h2>
-<p>Float quiere decir que se tienen varios elementos flotantes, todos saben que los demás están allí, y ninguno se superpone.</p>
-<p>Sus valores son: right, left, both</br>En Css:</p>
+<p>Float </p>
+<p>Sus valores son: <strong class="verde">right, left, both</strong>En Css:</p>
 <table>
     <tr>
         <td><strong class="verde">selector {</br>
@@ -759,7 +808,7 @@ de forma alternativa
         </td>
     </tr>
 </table>
-<p>A veces combinamos elementos grandes, flotantes y no flotantes, y los elementos terminan superponiéndose.</p>
+
                                                                 
 
 
@@ -767,10 +816,13 @@ de forma alternativa
 <!--clear -->
 <a name="Propiedad clear"></a>
 <h2>Propiedad clear</h2> 
-<p>Se usa clear para que un elememto flotante se separe de los otros elememtos qu esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior. como right, left, o both</br>La sintaxis es :</p>
+<p>La propiedad clear se usa para que un elememto flotante se separe de los otros elememtos que
+esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese 
+de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior.</br>
+Algunos valores son:<strong class="verde"> right, left, o both</strong>La sintaxis es :</p>
 <table>
     <tr>
-        <td><strong class="verde">elemento {</br>
+        <td><strong class="verde">selector {</br>
 <p>&nbsp&nbsp&nbsp&nbsp clear: valor</br>
         }</strong>
         </td>
