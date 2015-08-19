@@ -37,8 +37,6 @@
             <a href="#Comentario">Comentario</a></br>
             <a href="#Colores">Colores</a></br>
             <a href="#Píxeles y Em">Píxeles y Em</a></br>
-            
-            
             <a href="#Bibliografía">Bibliografía</a></br>
             <a href="#"></a></br>
             <a name=""></a>
@@ -106,8 +104,7 @@
                 
                 
                 
-                
- <!--selector --> 
+<!--selector --> 
 <a name="Selector"></a>
 <h2>Selector</h2>
 
@@ -132,8 +129,7 @@
         
                             
                             
-                            
-  <!--selector universal -->
+ <!--selector universal -->
 <a name="Selector Universal"></a>                           
 <h2>Selector Universal *</h2>
 <p>Este selector se puede usar para aplicar el estilo de CSS a cada elemento en la página. Por ejemplo:</p>
@@ -150,7 +146,6 @@
     </tr>
 </table>
 <p> Se creara un borde sólido de dos píxeles de ancho alrededor de cada elemento en la página de HTML</P>
-
 
 
 
@@ -325,7 +320,6 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
 
 
 
-
 <!--enlaces -->
   <a name="Enlaces"></a>                                  
 <h2> Enlaces</h2>
@@ -351,7 +345,6 @@ En CSS, class se identifican con un punto (<b>.</b>) así:</p>
     </tr>
 </table>
                                     
-
 
 
 <!--primer hijo -->
@@ -384,6 +377,169 @@ Por ejemplo:</p>
     </tr>
 </table>
                                     
+
+
+ <!--margin -->
+<a name="Propiedad Margin"></a>                                                
+<h2>Propiedad Margin</h2>
+<p>Margin(margen) Se refiere al espacio que hay entre nuestro elemento y los elementos que lo rodean</br>
+Algunos de los valores son:</br>
+<strong class="verde">Auto</strong>: Esto le indica al documento que automáticamente 
+coloque un margen igual a la izquierda y a la derecha de nuestro elemento, centrándolo en la página.</br>
+También puedes establecer a la vez todos los márgenes de un elemento: simplemente comienzas con el margen 
+superior y avanzas en el sentido de las manecillas del reloj (del superior al derecho, al inferior, y al izquierdo). Se define en px, em, %, pt(pulgadas), auto. Ejemplo:</br>
+<strong class="verde">margin: 1px 2px 3px 4px;</strong></br>
+También podemos determinar un lado específico</br> <strong class="verde">margin-top: 2px;</strong></br>
+Si colocamos dos valores, el primero es superior e inferior y el segundo derecha e izquierda<p>
+
+
+
+
+<!--paddimg -->
+<a name="Propiedad Padding"></a>
+<h2>Propiedad Padding</h2>
+<p><strong>padding</strong> Indica el espacio entre el borde y el contenido de la tabla</br>
+Los valores de padding pueden darse en:</br>
+<strong class="verde">px</strong> pixeles</br>
+<strong class="verde">em</strong></br>
+<strong class="verde">pt</strong> pulgadas</br>
+<strong class="verde">%</strong> porcentajes</br>
+<strong class="verde">inherit</strong> que es heredado del elemento padre</p>
+<table>
+    <tr>
+        <td>
+            <strong class="verde">selector {</br>
+                    &nbsp&nbsp&nbsp&nbsp propedad: valor;</br>
+    }</strong> 
+        </td>
+        <td>
+           <strong>  div {</br>
+            &nbsp&nbsp&nbsp&nbsp padding: 5px;</br>
+            }</strong> 
+        </td>
+    </tr>
+</table>
+
+
+
+ <!--position -->
+<a name="Propiedad Position"></a></br>                                                        
+<h2>Propiedad Position</h2>
+<p>El posicionamiento controla la posición de los elementos de HTML, los elementos están ubicados dentro de la página en lo que se conoce como modelo de caja de CSS. Cada elemento de HTML es como una pequeña caja que lo encierra.</br>
+Cada elemento de HTML tiene su propia caja para habitar. La caja más externa de cada elemento ocupa el ancho de toda la página.</br>
+La propiedad position determina el punto de referencia donde se debe localizar cada elemento HTML.</p>
+<table>
+    <tr>
+        <td><strong class="verde">státic</strong></td><td> Si no se especifica será static.</td></tr>
+    <tr>
+        <td><strong class="verde">absolute</strong></td>
+        <td> se posiciona en relación con el primer elemento padre que tiene y que no esté establecido con position static. Si no existe tal elemento, el elemento se posiciona en relación a html.
+         </td>
+    </tr>
+    <tr>
+        <td><strong class="verde">relative</strong></td>         <td> le indica al elemento que se desplace respecto al lugar donde se encontraría si tuviera el posicionamiento predeterminado static
+        </td>
+    </tr>
+    <tr>
+        <td><strong class="verde">fixed</strong></td>
+        <td> ancla un elemento a la ventana del navegador.</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><strong class="verde">
+            selector {</br>
+            propiedad: valor;</strong>
+        </td>
+        <td><strong>
+            div {</br>
+            position: relative;
+            </strong>
+        </td>
+    </tr>
+</table>
+
+
+
+<!--display -->
+<a name="Propiedad display"></a>
+<h2>Propiedad display</h2>
+<p>Definición</br>
+Algunos valores posibles:</p>
+<table>
+    <tr>
+        <td><strong class="verde">block</strong></td> <td>Esto vuelve al elemento una caja de bloque. 
+        No permitirá que nada sea ubicado junto a él en la página. Ocupa el ancho completo.</td></tr>
+<td><strong class="verde">inline-block</strong></td><td> Esto vuelve a un elemento una caja de bloque, 
+pero permitirá que otros elementos sean ubicados junto a él en la misma línea.</td></tr>
+<td><strong class="verde">inline</strong></td><td> Esto hace que un elemento sea ubicado en la misma línea que 
+otro elemento, pero sin darle formato como bloque. Solamente ocupa el ancho más pequeño posible que requiera 
+(pero no la línea completa).</td></tr>
+<td><strong class="verde">none</strong></td><td> Elimina completamente el elemento seleccionado de la página, 
+incluyendo cualquier hijo o contenido que tenga. Pero no se pierde la información.</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <strong class="verde">selector {</br>
+                    &nbsp&nbsp&nbsp&nbsp propedad: valor;</br>
+    }</strong> 
+        </td>
+        <td>
+           <strong>  div {</br>
+            &nbsp&nbsp&nbsp&nbsp display: block;</br>
+            }</strong> 
+        </td>
+    </tr>
+</table>
+
+
+                                                                
+                                                                
+<!--float -->
+    <a name="Propiedad Float"></a>                                                       
+<h2>Propiedad Float</h2>
+<p>Float </p>
+<p>Sus valores son: <strong class="verde">right, left, both</strong>En Css:</p>
+<table>
+    <tr>
+        <td><strong class="verde">selector {</br>
+            float: valor</br>
+    }</strong>
+        </td>
+        <td><strong>div {</br>
+            float: right;</br>
+    }</strong>
+        </td>
+    </tr>
+</table>
+
+                                                                
+
+
+
+<!--clear -->
+<a name="Propiedad clear"></a>
+<h2>Propiedad clear</h2> 
+<p>La propiedad clear se usa para que un elememto flotante se separe de los otros elememtos que
+esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese 
+de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior.</br>
+Algunos valores son:<strong class="verde"> right, left, o both</strong>La sintaxis es :</p>
+<table>
+    <tr>
+        <td><strong class="verde">selector {</br>
+<p>&nbsp&nbsp&nbsp&nbsp clear: valor</br>
+        }</strong>
+        </td>
+        <td><strong>div {</br>
+<p>&nbsp&nbsp&nbsp&nbsp clear: left</br>
+        }</strong>
+        </td>
+    </tr>
+</table>
+
 
 
 
@@ -450,32 +606,70 @@ Por ejemplo:</p>
 }</strong></br>
 Es importante recordar que fon-weight va de primeras, font-size
 y font-family deben ser los últimos valores inicializados y en ese orden. No debemos separar por coma.</p>
-                                        
 
 
 
-<!--valores de respaldo -->
- <a name="Valores de respaldo"></a>                                       
-<h2>Valores de respaldo</h2>
-<p>Se puede indicarle a CSS que pruebe varias fuentes, yendo de una a la siguiente si la que estás buscando no está disponible.</p>
-<p>Por ejemplo, si se escribe:</p>
+
+<!--text decoration -->
+<a name="Propiedad Text-decoration"></a>
+<h2>Propiedad Text-decoration</h2>
+<p>Los enlaces tienen muchas de las mismas propiedades del texto normal.</br> 
+También tienen una propiedad, <strong></strong>text-decoration</strong>, que puede modificar para darle un 
+toque un poco más personalizado.</br>
+Algunos de los valores de text-decoration son:</p>
 <table>
     <tr>
-        <td><strong class="verde">p {</br>
-    &nbsp&nbsp&nbsp&nbsp font-family: valor 1, Valor 2, valor 3;  </br>
-    }</strong>
-        </td>
-        <td><strong>p {</br>
-    &nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
-    }  </strong>
+        <td><strong class="verde">Under line </strong>:</td><td> Se muestra subrayado todas las líneas 
+        del texto
         </td>
     </tr>
+    <tr>
+    	<td><strong class="verde">over line </strong>:</td><td> Subrayado en la parte superior del texto
+    	</td>
+    </tr>
+    <tr>
+    	<td><strong class="verde">line-through </strong>:</td><td> El texto se ve tachado con una línea continua
+    	</td>
+    </tr>
+    <tr>
+    	<td><strong class="verde">blink </strong>:</td><td> El texto parpadea apareciendo y desapareciendo 
+de forma alternativa
+	</td>
+    </tr>
+    <tr>
+    	<td><strong class="verde">none </strong>:</td><td> Es un texto normal, sin nada.
+    	</td>
+    </tr>
 </table>
-<p>CSS intentará primero aplicar Tahoma a los párrafos. Si el computador del usuario no tiene esa fuente, 
-a continuación probará con Verdana, y si esa no funciona, mostrará una fuente sans-serif predeterminada.</p>
-                                            
+                                                        
 
-
+<!--white-space -->
+<a name="Propiedad white-space"></a>
+<h2>Propiedad white-space</h2>
+<p>Permite variar el comportamiento de los espacios en blanco. El estándar CSS 2.1 define cinco modelos 
+diferentes de tratamiento de espacios en blanco:</p>
+<table>
+	<tr>
+		<td><p><strong class="verde">normal</strong></td><td> Los espacios en blanco sobrantes y los saltos de línea se eliminan.
+No obstante, el texto se muestra en tantas líneas como sea necesario para que sus contenidos no se salgan del 
+elemento contenedor.</td>
+	</tr>
+	<tr>
+		<td><strong class="verde">nowrap</strong> </td><td> Se comporta igual que normal en los espacios en blanco, pero no añade 
+saltos de línea en el texto original, por lo que los contenidos se pueden salir de su elemento contenedor.</td>
+	</tr>
+	<tr>
+		<td><strong class="verde">pre-wrap</strong></td><td> Se comporta igual que pre, pero se introducen los saltos de línea que 
+sean necesarios para que los contenidos de texto nunca se salgan de su elemento contenedor.</td>
+	</tr>
+	<tr>
+		<td><strong class="verde">pre-line</strong></td><td> Se eliminan los espacios en blanco sobrantes, pero se respetan 
+los saltos de línea originales y se crean tantos saltos de línea como sean necesarios para que el contenido 
+de texto no se salga de su elemento contenedor.</td>
+		</td>
+	</tr>
+</table>
+                                        
 
 <!--Etiqueta div -->
 <a name="Etiqueta div"></a>
@@ -590,6 +784,37 @@ ejemplo: <strong class="verde">border-top-width</strong></p>
         <td>Establece el espacio entre un elemento y su contenidoo</td>
     </tr>
 </table>
+
+
+<!--valores de respaldo -->
+ <a name="Valores de respaldo"></a>                                       
+<h2>Valores de respaldo</h2>
+<p>Se puede indicarle a CSS que pruebe varias fuentes, yendo de una a la siguiente si la que estás buscando no está disponible.</p>
+<p>Por ejemplo, si se escribe:</p>
+<table>
+    <tr>
+        <td><strong class="verde">p {</br>
+    &nbsp&nbsp&nbsp&nbsp font-family: valor 1, Valor 2, valor 3;  </br>
+    }</strong>
+        </td>
+        <td><strong>p {</br>
+    &nbsp&nbsp&nbsp&nbsp font-family: Tahoma, Verdana, sans-serif;  </br>
+    }  </strong>
+        </td>
+    </tr>
+</table>
+<p>CSS intentará primero aplicar Tahoma a los párrafos. Si el computador del usuario no tiene esa fuente, 
+a continuación probará con Verdana, y si esa no funciona, mostrará una fuente sans-serif predeterminada.</p>
+
+
+
+<!--valores negativos -->
+<a name="Valores negativos"></a>                                                                
+<h2>Valores negativos</h2>
+        <p>Cuando le das un valor positivo de padding o de margin, CSS coloca ese espacio en medio del elemento y de su referente: por ejemplo, si tienes un <b>                                                    &ltdiv&gt</b> y quieres darle un margen izquierdo, margin-left, con valor 20px, CSS coloca veinte píxeles en medio del margen izquierdo del <b>&ltdiv&gt        </b> y el borde de la pantalla. Esto efectivamente desplaza al
+ <b>&ltdiv&gt</b> veinte píxeles a la derecha.</p>
+ <p>Si quieres desplazar un elemento en la otra dirección, puedes darle a CSS un valor negativo: margin-left:
+ -20px desplazará el elemento veinte píxeles a la izquierda.</p>
                                                     
                                                         
 
@@ -646,236 +871,7 @@ Los valores hex siempre comienzan con un signo de numeral (<strong class="verde"
         
         
     
-         
- <!--margin -->
-<a name="Propiedad Margin"></a>                                                
-<h2>Propiedad Margin</h2>
-<p>Margin(margen) Se refiere al espacio que hay entre nuestro elemento y los elementos que lo rodean</br>
-Algunos de los valores son:</br>
-<strong class="verde">Auto</strong>: Esto le indica al documento que automáticamente 
-coloque un margen igual a la izquierda y a la derecha de nuestro elemento, centrándolo en la página.</br>
-También puedes establecer a la vez todos los márgenes de un elemento: simplemente comienzas con el margen 
-superior y avanzas en el sentido de las manecillas del reloj (del superior al derecho, al inferior, y al izquierdo). Se define en px, em, %, pt(pulgadas), auto. Ejemplo:</br>
-<strong class="verde">margin: 1px 2px 3px 4px;</strong></br>
-También podemos determinar un lado específico</br> <strong class="verde">margin-top: 2px;</strong></br>
-Si colocamos dos valores, el primero es superior e inferior y el segundo derecha e izquierda<p>
-
-
-
-
-<!--paddimg -->
-<a name="Propiedad Padding"></a>
-<h2>Propiedad Padding</h2>
-<p><strong>padding</strong> Indica el espacio entre el borde y el contenido de la tabla</br>
-Los valores de padding pueden darse en:</br>
-<strong class="verde">px</strong> pixeles</br>
-<strong class="verde">em</strong></br>
-<strong class="verde">pt</strong> pulgadas</br>
-<strong class="verde">%</strong> porcentajes</br>
-<strong class="verde">inherit</strong> que es heredado del elemento padre</p>
-<table>
-    <tr>
-        <td>
-            <strong class="verde">selector {</br>
-                    &nbsp&nbsp&nbsp&nbsp propedad: valor;</br>
-    }</strong> 
-        </td>
-        <td>
-           <strong>  div {</br>
-            &nbsp&nbsp&nbsp&nbsp padding: 5px;</br>
-            }</strong> 
-        </td>
-    </tr>
-</table>
-
-
-
-
-
-<!--text decoration -->
-<a name="Propiedad Text-decoration"></a>
-<h2>Propiedad Text-decoration</h2>
-<p>Los enlaces tienen muchas de las mismas propiedades del texto normal.</br> 
-También tienen una propiedad, <strong></strong>text-decoration</strong>, que puede modificar para darle un 
-toque un poco más personalizado.</br>
-Algunos de los valores de text-decoration son:</p>
-<table>
-    <tr>
-        <td><strong class="verde">Under line </strong>:</td><td> Se muestra subrayado todas las líneas 
-        del texto
-        </td>
-    </tr>
-    <tr>
-    	<td><strong class="verde">over line </strong>:</td><td> Subrayado en la parte superior del texto
-    	</td>
-    </tr>
-    <tr>
-    	<td><strong class="verde">line-through </strong>:</td><td> El texto se ve tachado con una línea continua
-    	</td>
-    </tr>
-    <tr>
-    	<td><strong class="verde">blink </strong>:</td><td> El texto parpadea apareciendo y desapareciendo 
-de forma alternativa
-	</td>
-    </tr>
-    <tr>
-    	<td><strong class="verde">none </strong>:</td><td> Es un texto normal, sin nada.
-    	</td>
-    </tr>
-</table>
-                                                        
-
-
-
-
-                                                           
- <!--position -->
-<a name="Propiedad Position"></a></br>                                                        
-<h2>Propiedad Position</h2>
-<p>El posicionamiento controla la posición de los elementos de HTML, los elementos están ubicados dentro de la página en lo que se conoce como modelo de caja de CSS. Cada elemento de HTML es como una pequeña caja que lo encierra.</br>
-Cada elemento de HTML tiene su propia caja para habitar. La caja más externa de cada elemento ocupa el ancho de toda la página.</br>
-La propiedad position determina el punto de referencia donde se debe localizar cada elemento HTML.</p>
-<table>
-    <tr>
-        <td><strong class="verde">státic</strong></td><td> Si no se especifica será static.</td></tr>
-    <tr>
-        <td><strong class="verde">absolute</strong></td>
-        <td> se posiciona en relación con el primer elemento padre que tiene y que no esté establecido con position static. Si no existe tal elemento, el elemento se posiciona en relación a html.
-         </td>
-    </tr>
-    <tr>
-        <td><strong class="verde">relative</strong></td>         <td> le indica al elemento que se desplace respecto al lugar donde se encontraría si tuviera el posicionamiento predeterminado static
-        </td>
-    </tr>
-    <tr>
-        <td><strong class="verde">fixed</strong></td>
-        <td> ancla un elemento a la ventana del navegador.</td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <td><strong class="verde">
-            selector {</br>
-            propiedad: valor;</strong>
-        </td>
-        <td><strong>
-            div {</br>
-            position: relative;
-            </strong>
-        </td>
-    </tr>
-</table>
-
-
-
-
-
-<!--display -->
-<a name="Propiedad display"></a>
-<h2>Propiedad display</h2>
-<p>Definición</br>
-Algunos valores posibles:</p>
-<table>
-    <tr>
-        <td><strong class="verde">block</strong></td> <td>Esto vuelve al elemento una caja de bloque. 
-        No permitirá que nada sea ubicado junto a él en la página. Ocupa el ancho completo.</td></tr>
-<td><strong class="verde">inline-block</strong></td><td> Esto vuelve a un elemento una caja de bloque, 
-pero permitirá que otros elementos sean ubicados junto a él en la misma línea.</td></tr>
-<td><strong class="verde">inline</strong></td><td> Esto hace que un elemento sea ubicado en la misma línea que 
-otro elemento, pero sin darle formato como bloque. Solamente ocupa el ancho más pequeño posible que requiera 
-(pero no la línea completa).</td></tr>
-<td><strong class="verde">none</strong></td><td> Elimina completamente el elemento seleccionado de la página, 
-incluyendo cualquier hijo o contenido que tenga. Pero no se pierde la información.</td>
-    </tr>
-</table>
-<table>
-    <tr>
-        <td>
-            <strong class="verde">selector {</br>
-                    &nbsp&nbsp&nbsp&nbsp propedad: valor;</br>
-    }</strong> 
-        </td>
-        <td>
-           <strong>  div {</br>
-            &nbsp&nbsp&nbsp&nbsp display: block;</br>
-            }</strong> 
-        </td>
-    </tr>
-</table>
-
-
-                                                                
-                                                                            
-                                                                            
-    <!--float -->
-    <a name="Propiedad Float"></a>                                                       
-<h2>Propiedad Float</h2>
-<p>Float </p>
-<p>Sus valores son: <strong class="verde">right, left, both</strong>En Css:</p>
-<table>
-    <tr>
-        <td><strong class="verde">selector {</br>
-            float: valor</br>
-    }</strong>
-        </td>
-        <td><strong>div {</br>
-            float: right;</br>
-    }</strong>
-        </td>
-    </tr>
-</table>
-
-                                                                
-
-
-
-<!--clear -->
-<a name="Propiedad clear"></a>
-<h2>Propiedad clear</h2> 
-<p>La propiedad clear se usa para que un elememto flotante se separe de los otros elememtos que
-esten a su alrededor y se puede desplazar hacia la izquierdo, hacia la derecha o también puede apartese 
-de los elementos que están en la izquierda y en la derecha y desplazarse en la parte inferior.</br>
-Algunos valores son:<strong class="verde"> right, left, o both</strong>La sintaxis es :</p>
-<table>
-    <tr>
-        <td><strong class="verde">selector {</br>
-<p>&nbsp&nbsp&nbsp&nbsp clear: valor</br>
-        }</strong>
-        </td>
-        <td><strong>div {</br>
-<p>&nbsp&nbsp&nbsp&nbsp clear: left</br>
-        }</strong>
-        </td>
-    </tr>
-</table>
-                                                                
-
-
-
-<!--white-space -->
-<a name="Propiedad white-space"></a>
-<h2>Propiedad white-space</h2> 
-<p>Permite variar el comportamiento de los espacios en blanco. El estándar CSS 2.1 define cinco modelos diferentes de tratamiento de espacios en blanco:</p>
-<p><strong class="verde">normal</strong>: los espacios en blanco sobrantes y los saltos de línea se eliminan. No obstante, el texto se muestra en tantas líneas como sea necesario para que sus contenidos no se salgan del elemento contenedor.</p>
-<p><strong class="verde">nowrap</strong>: se comporta igual que normal en los espacios en blanco, pero no añade saltos de línea en el texto original, por lo que los contenidos se pueden salir de su elemento contenedor. 
-<p><strong class="verde">pre-wrap</strong>: se comporta igual que pre, pero se introducen los saltos de línea que sean necesarios para que los contenidos de texto nunca se salgan de su elemento contenedor.</p>
-<p><strong class="verde">pre-line</strong>: se eliminan los espacios en blanco sobrantes, pero se respetan los saltos de línea originales y se crean tantos saltos de línea como sean necesarios para que el contenido de texto no se salga de su elemento contenedor.</p>
-                                                                
-
-
-<!--valores negativos -->
-<a name="Valores negativos"></a>                                                                
-<h2>Valores negativos</h2>
-        <p>Cuando le das un valor positivo de padding o de margin, CSS coloca ese espacio en medio del elemento y de su referente: por ejemplo, si tienes un <b>                                                    &ltdiv&gt</b> y quieres darle un margen izquierdo, margin-left, con valor 20px, CSS coloca veinte píxeles en medio del margen izquierdo del <b>&ltdiv&gt        </b> y el borde de la pantalla. Esto efectivamente desplaza al
- <b>&ltdiv&gt</b> veinte píxeles a la derecha.</p>
- <p>Si quieres desplazar un elemento en la otra dirección, puedes darle a CSS un valor negativo: margin-left:
- -20px desplazará el elemento veinte píxeles a la izquierda.</p>
- 
- 
- 
- 
-    <!--bibliografía-->
+         <!--bibliografía-->
 <a name="Bibliografía"></a>
 <h2>Bibliografía</h2>
 <p><strong>COMOCREARUNSITIOWEB</strong>
